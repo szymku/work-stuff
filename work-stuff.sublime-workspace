@@ -1,0 +1,321 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"use",
+				"useTruck"
+			],
+			[
+				"pc",
+				"pcg"
+			],
+			[
+				"us",
+				"useRail"
+			],
+			[
+				"Shi",
+				"ShippingDelegat"
+			],
+			[
+				"imp",
+				"implements"
+			],
+			[
+				"v",
+				"vm"
+			],
+			[
+				"print",
+				"print_r"
+			],
+			[
+				"hash",
+				"hash_algos"
+			],
+			[
+				"vd",
+				"vde	PHP: Dump information about a variable and exit"
+			],
+			[
+				"arra",
+				"array_combine"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"format",
+				"CodeFormatter: Show PHP Transformations"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"install P",
+				"Package Control: Install Package"
+			],
+			[
+				"remo",
+				"Package Control: Remove Package"
+			],
+			[
+				"",
+				"ANF: Copy Current File"
+			]
+		],
+		"width": 584.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/Users/skulikowski/Documents/work-stuff"
+	],
+	"file_history":
+	[
+		"/C/projects/on_vagrant/ubuntu/projects/rabbit_test/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Channel/AbstractChannel.php",
+		"/C/projects/on_vagrant/ubuntu/projects/rabbit_test/recive.php",
+		"/C/opscode/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.10.0/lib/kitchen/instance.rb",
+		"/C/Users/skulikowski/.chef/validation.pem",
+		"/C/Users/skulikowski/.chef/skulikowski.pem",
+		"/C/Users/skulikowski/.chef/knife.rb",
+		"/C/projects/Homestead/Code/products-analizer/app/Http/routes.php",
+		"/C/projects/Homestead/Code/products-analizer/.env",
+		"/C/projects/Homestead/Code/products-analizer/composer.json",
+		"/C/projects/Homestead/Code/products-analizer/app/Providers/AppServiceProvider.php",
+		"/C/projects/Homestead/Code/products-analizer/bootstrap/app.php",
+		"/C/projects/Homestead/Code/products-analizer/.env.example",
+		"/C/projects/Homestead/Code/products-analizer/composer.lock",
+		"/C/projects/Homestead/Code/products-analizer/app/User.php",
+		"/C/Users/skulikowski/AppData/Roaming/Sublime Text 3/Packages/AdvancedNewFile/README.md",
+		"/C/projects/on_vagrant/scotchbox/Vagrantfile",
+		"/C/Users/skulikowski/.ssh/id_rsa",
+		"/C/Users/skulikowski/Documents/Projects/Patterns/Delegate",
+		"/C/Users/skulikowski/Documents/info_start-04.04.2016.docx",
+		"/C/Users/skulikowski/AppData/Roaming/Sublime Text 3/Packages/CodeFormatter/CodeFormatter.sublime-settings",
+		"/C/Users/skulikowski/AppData/Roaming/Sublime Text 3/Packages/CodeFormatter/README.md",
+		"/C/Users/skulikowski/AppData/Roaming/Sublime Text 3/Packages/phpfmt/Default.sublime-keymap",
+		"/C/Users/skulikowski/AppData/Roaming/Sublime Text 3/Packages/php-grammar/README.md",
+		"/C/Users/skulikowski/AppData/Roaming/Sublime Text 3/Packages/PHP Completions Kit/README.md",
+		"/C/Users/skulikowski/AppData/Roaming/Sublime Text 3/Packages/Phpcs/Default (Windows).sublime-keymap",
+		"/C/xampp/apache/logs/ssl_request.log"
+	],
+	"find":
+	{
+		"height": 23.0
+	},
+	"find_in_files":
+	{
+		"height": 90.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"\";\n",
+			"app",
+			"CZ10XH",
+			"jklimek",
+			"=>",
+			" > MALL > ",
+			"> MALL > ",
+			"##",
+			"old",
+			"mkubacki",
+			"www/mkubacki",
+			"www",
+			"mkubacki",
+			"skulikowski",
+			"'source_id' => '4091',\n'supplier_id' => '57459',\n'purchase_organization' => 'PLA0',\n'currency' => 'PLN ',\n'protocol' => 'ftp',\n'url' => 'swedexml@swede.pl/swedeCeny.xml',\n'file_format' => 'xml',\n'auth_method' => 'basic',\n'username' => 'swedexml',\n'password' => '3sc3W97cbm',\n'save_price' => 'f',\n'save_stock' => 't',\n'active' => 't',\n'forcerun' => 'f',\n'running' => 'f',\n'xml_element' => '->PRODUCTS->PRODUCT',\n'source_id' => '4091',\n'supplier_id' => '57459',\n'purchase_organization' => 'PLA0',\n'currency' => 'PLN ',\n'protocol' => 'ftp',\n'url' => 'swedexml@swede.pl/swedeCeny.xml',\n'file_format' => 'xml',\n'auth_method' => 'basic',\n'username' => 'swedexml',\n'password' => '3sc3W97cbm',\n'save_price' => 'f',\n'save_stock' => 't',\n'active' => 't',\n'forcerun' => 'f',\n'running' => 'f',\n'xml_element' => '->PRODUCTS->PRODUCT'",
+			";",
+			"]",
+			"=",
+			"code",
+			"422",
+			"404",
+			"500",
+			"a unresolved",
+			"X-nrh-user",
+			"X-nrh-ShopId",
+			"session",
+			"php",
+			" ",
+			"1)",
+			"string",
+			"set",
+			"category",
+			"index.php",
+			"root",
+			"rootdirectory"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": true,
+		"replace_history":
+		[
+			":",
+			"",
+			" > ",
+			"current",
+			"skulikowski",
+			"www/projects/skulikowski",
+			"skulikowski",
+			",",
+			"",
+			"=>",
+			"an unresolved",
+			"X-Nrh-User",
+			"X-Nrh-Shopid",
+			",",
+			""
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.paneltranformations":
+	{
+		"height": 526.0
+	},
+	"pinned_build_system": "",
+	"project": "work-stuff.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"rou",
+				"app\\Http\\routes.php"
+			],
+			[
+				"env",
+				".env"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": false,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 210.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
