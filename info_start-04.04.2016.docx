@@ -1,0 +1,582 @@
+========
+START
+===
+MALL
+========
+
+** 01.04.2016 **
+Szymon.kulikowski@mall.cz
+Gitlab, jira, apiary, hipchat, postman, elasticsearch, oraclesql
+Projects:
+-	Product-api
+-	Product-indexer
+
+** 04.04.2016 **
+Phpstorm – tool->deployment for upload files to server
+Putty – free ssh and telnet server
+
+srv.skulikowski.dev -> putty
+vhost-kklebaniuk.dev.conf -> /www/vhosts.d/kklebaniuk.dev.conf -> vpn
+
+https://nrh.hipchat.com/chat/room/2601938 -> IT PL
+
+http://product-api.mall.local:8085/v1/id/product_id?shopId=CZ10MA
+
+jan zahradka -> linux, vhost
+indry kubat -> cheff?
+
+Tracy – debug
+Codeception – tests
+www.thoughtworks – page about programming
+supervisor – a process control system
+heureka.cz – price comparison
+rabbitmq - queue
+Nagios – monitoring
+Forticlient – vpn
+Mc – midnight commander
+restFull API
+
+** 05.04.2016 **
+Bacula – backup, recovery
+http://aktion.mall.local/AktionNEXT/agenda.aspx?ida=60&awp=DenniData&idr=f135d9ce-3d60-4fdb-8c9c-cf97dd8617ca -> work time 
+logstash -> ES data collection engine
+postfix
+
+sqldeveloper 4.1.3 -> IDE
+zend – a lot of staff
+end-to-end
+cloud solutions
+chef client -> deploy servers and applications
+apache vs nginx
+distributed vs centralized
+events-driven
+static vs dynamic
+filebased vs ?
+cz-dc-v-280 -> are symlinks   /home/vhost.d  -> /www
+
+SAP
+ABAP (Advanced Business Application Programming)
+Erp – enterprice resource and planning
+Install ssh -> openssh client server
+Riak – nosql key-value
+
+Tools - > Preferences -> Database -> Advanced i ustawiacie TNS Directory na folder z plikiem tnsnames.ora.txt
+Następnie klikacie klikacie prawym na Connections (z lewej strony w glownym oknie) i Import Connections, wybieracie plik sqldeveloper_test_connections.xml
+
+
+### pass ###
+Init5827
+Oracle -> pass123
+
+Vim:
+V – start copy lines
+P – paste copied 
+:%s/foo/bar/g -> find and replace
+
+Vimdiff file1 file2
+
+** 06.04.2016 **
+DDL -> data definition language
+
+** 07.04.2016 **
+Memcache -> key/value
+
+cz-dc-v-280 -> whai is in ps?
+
+-	Most important was that we discussed a bit of how menu service could act 
+-	Vit brought us some goodness 
+
+** 08.04.2016 **
+Endpoints 
+Strops
+
+Opcache php
+
+
+** 11.04.2016 **
+
+One note
+Read Michal notes on gitlab.
+
+Add php to environmental 
+
+Klimiuk jolanta
+Antoniukowska 52/18
+15-845
+90pln
+
+** 12.04.2015 **
+Repository pattern
+
+vm vs. container
+chef puppet
+
+
+** 13.04.2015 **
+
+heureka, rabbitmq, flow of payment
+
+nette
+psr standards 
+create prezenters and templeates
+how presenters work
+what is a container
+session staff -> riak, file, separate concern 
+
+
+patterns:
+- service locator
+- di
+- IoC
+
+z-ray - php debug solution
+
+mall.cz.test
+
+product-api.mall.local:8085/testing
+
+components how are we use there?
+ddd bounded context
+
+pass some parameters to component(control)
+signals in nette maybe in general
+do=AddToCart
+
+in mall components are created in one file not by createComponent
+
+composite pattern
+php fig - for logging
+monolog
+
+apache server-status
+linux strace
+lsof
+logstash agent
+read from somewhere and send somewhere
+consul.io - must know 
+dig
+consul - register of servers
+kiban is nothing more than browser of the data
+codeception for testing
+
+unit -> testing a method
+
+acceptance ->
+functional
+
+bamboo
+phantom js
+wiki.srv3.dev
+
+alter session set current_schema = imwct17
+
+cost base optimizer
+
+autotrace
+
+thomas kyte
+
+satis.mall.local
+
+percona sql
+
+docker
+
+bootstrap twiter
+
+kitematic
+
+
+** 18.04.2016 **
+
+tomcat?
+mercury?
+
+
+** 22.04.2016 **
+
+
+1. make method to get data from post and put in Slimer
+2. what type of variables save to categories.txt?
+3. get data from form with proper types
+
+4. remove, add children to categories
+  
+  scenarios:
+    - delete category -> remove from parent children field
+    - add category -> add to parent children category
+
+    - delete, add main category - do nothing
+
+5. types of data in json category
+  - boolean ->
+  - for parentCategoryId if main category
+
+
+Validation
+  1. no headers
+  2. no categoryId or not an int
+
+
+** 26.04.2016 **
+
+-----
+brooming
+How pix works?
+
+Workers - producer, consumer
+
+elasticsearch - cluster; in cluster a few servers 
+
+db synchronize wit elastic
+
+
+ppc - adwards
+
+allegro - to long titles
+
+memcache - cache layer between db query and web app
+
+elastic upgrade -> query builder in papi
+
+multiple es clusters
+-----
+
+why i search papi?
+to see how things are done there
+
+
+** 28.04.2016 **
+
+private cloud -> vm, without state, consul, bus for service, even dbsql as service 
+
+
+
+'CZ10MA', 'CZ20KO', 'CZ21AZ', 'CZ22HS', 'DE10GE', 'HU10MA', 'PL10MA', 'SK10MA'
+
+
+
+** 29-04-2016 **
+
+in _bootstrap in unit you may define yours const
+
+
+PC-
+what user in db is used? 
+imwa, imwct, imwc?
+
+check it in cz-dc-v-280
+
+where loadProductIds are used?
+in RedisProductIndexer->dumpAllProducts() and RedisProductIndexer->indexAllProductIds()
+
+
+
+** 05.05.2016 **
+
+How to get the first element from array? -php
+
+
+** 03.06.2016 **
+
+elasticsearch 
+
+CI - continous integration - bamboo
+
+PC-4
+- analyze:
+   
+
+http://cz-dc-v-416.mall.local:8080/product-api/v1/ -- url to product-api from Monolith
+
+
+
+** 09-06-2016 **
+
+Maricin pix analyze (notify pix on category change)
+
+
+** 13-06-2015 **
+___
+Teraźniejsza chwila jest zawsze najcenniejsza; ani nie powróci, ani się nie powtórzy. Każda minuta może być ostatnią, dlatego powinniśmy pozostać świadomi i nie tracić czasu.
+
+$ git fetch --all --prune
+
+prune -> przycinać
+
+
+** 14-06-2015 **
+
+New schema is IMWTNEW_T2 and should be ready on ^mall\.[cz|sk|pl|hu]\.test
+
+1.	Developers will test all bugs itself! So no need to send bug fixes to the testers
+2.	All other tickets MUST go thru testing!
+3.	Guys will prepare test cases for minor, standard and big issues. So everyone can test ticket if necessary by theirs TCs’ and standards
+4.	An environment *.pretest become “testing” ground for development. Our standard *.test environment must become much more stable than now. Vítek, Jakub and Dan will tell you more about this change.
+5.	Jakub and Vítek will prepare an unified testing comment. Every ticket who’s going to production will must have this comment, where will be info about who test ticket and how. (this is valid for other teams too)
+
+
+
+new working test  imwtnew_t2 and imwmedia_t2 
+
+
+Pix_test - table used when testing 'add simple product' in pix 
+
+
+26-06-2016
+
+current_schema in imwtnew_t2 -> 
+
+
+public database links
+
+
+cagtegory-api test storage -> http://gitlab.mall.local/product-team/categories-test
+
+
+
+-- 28-06-2016 --
+
+standup
+
+PC-210 Yesterday I've moved this task to done and deploy it. I also had to change the cookbook. After this change app stopped to respond in a propper way.
+PC-229 - I will be continue with this task today 
+
+
+PC-229 I've stoped worked on this task because it is blocked by 249.
+
+PC-245 Add logger to capi. Because now is now logging for app.  
+
+
+-- 01-07-2016 --
+
+PC-245 I've deployed category-api with logger and everything works
+
+PC-10 Category-gui-editor I created a git repository for project.
+PC-231 Prepare dashboard basic layout
+
+
+-- 08-07-2016 --
+
+PC-234 - I've finished form for category edition. It sends request and update save categories.
+         After deploy PC-233 (tree structure) I had to make those two components communicate together.
+         It works nice.
+PC-284 - Validate form and display errors. 
+
+
+
+-- 11-07-2016 --
+
+PC-284 - validation inputs on js side, display errors, block save button
+
+PC-235 - conflict resolution form with validation on js side
+
+
+
+I'm going to prepare three workshops for you: Docker with Petr Novotný, Advanced Linux and Golang language basics.
+
+
+-- 25-07-2016 --
+
+1. block view on load something
+2. freez on select
+3. change commponent treeselect name
+4. active on category merge
+5. 
+
+
+-- 03-08-2016 --
+
+What dhcp is?
+Ruby .erb
+
+ - cookbook -
+  - merge to master 
+  - add tag 
+  - run chef client
+
+
+-- 08-08-2016 --
+
+- run script migrateCategories for production
+- Web sync - get categories from the last schema? or from category-api
+- say guys to use gui editor (close category editor ? in sap)
+- test new stuff -> particulary test pix endpoint
+- C:\www\mall\backend\data\web_synchronizer\elasticsearch_sh.tpl 
+  php ../../product-indexer/current/www/index.php indexer:index-all -s #{IMWC} -i products_#{IMWC}
+
+
+- remember about how pix merge categories
+
+
+-- 09-08-2016 --
+
+bearer token auth2 in header 
+
+category-gui-editor
+- we can think about local storage of data
+- constraintParams do not work as expected in every conditions
+- select in shops are freezed when data in categories[]
+- move from merge to category - no preloader, don't know what is going on
+Category GUI Editor(uwagi Matuesza):
+1) Walidacja constraintów:
+dodaje 2 Cosntrainty -> usuwam jeden -> brak walidacji, mogę zapisać puste paramsy w drugim
+2) Tworzenie podkategorii:
+tworzę nową kategorię -> próbuję inną kategorię ustawić jako podkategorię tej nowo utworzonej
+
+
+GitLab CI - runners, pipeline and so on 
+
+
+-- 10-08-2016 --
+
+git gc
+git prune
+
+In most cases, users should run git gc, which calls git prune.
+
+
+-- 11-08-2016 --
+
+tables:
+shop_variant 
+shop
+
+recSchema: IMWTNEW_T2
+
+Suplier Feeds:
+cz-dc-v-584.mall.local
+cz-dc-v-585.mall.local
+
+
+-- 12-08-2016 --
+
+"Każdy problem jest na tyle wielki, na ile wielkim pozwolimy mu być."
+
+Site map
+
+http://cz10ma.prod.skulikowski.dev/sitemap
+
+Monolith haven't worked because of missing temp/cache. 
+
+
+-- 16-08-2016 --
+
+ERP team
+VGP werhouse technology
+PC-281 - about ['37,8'] -> validation problem
+
+What the steps are when Monolith is deployed?
+
+PC-30 -> category-api
+PC-10 -> gui
+PC-9  -> notify pix
+
+
+-- 18-08-2016 -- Hackday
+
+semantic ui
+
+
+
+-- 22-08-2016 --
+
+What am I doing now?
+PC-380 - about replacing shop config from db to shop service in product-indexer
+
+Which file?
+app/console/CheckArchiveCommand.php ---> getVariantsThatShouldBeInArchive();
+
+
+## 
+mehod injection for example in laravel constrollers --> for repository
+
+public function showTasksDashboard(TasksRepository $tasks)
+    {
+        $usefulTasksStuff = $tasks->getUsefulStuff();
+    }
+##
+
+
+user_rec => IMWTNEW_T2
+user_gen => IMWCT37
+
+
+JOIN - LEFT JOIN  in oracle
+
+IMWTNEW_T2.SHOP_CONFIG -> a table with most information about shops
+
+
+berkshelf way of building app
+
+
+-- 31-08-2016 --
+
+standup
+
+I workded on PC-373 is about memory leak. It's interesting stuff.
+Test tasks with replacing joins to shopconfig.
+PC-53 - chef cookbook for replication dashboard
+
+
+
+-- 20-09-2016 --
+
+Knapp - solution for logistic
+
+[T]
+Private Cloud; In-premise; tcp cloud; Mirantis - private cloude wit no vendor
+Openstack
+
+apache proxy; webpack; nodejs server
+
+PaaS - Platform as a service
+
+
+job web runner
+
+- availability in SAP
+- refresh service (communication only with redis and data storage)
+
+
+Q&A
+1. virtual - promotion
+2. What if redis fails
+3
+
+
+-- 26-09-2016 --
+
+! Error when try to share folders between win and ubuntu(vagrant)
+diff version between vbox verion(5.xx) and guset additions (4.xx)
+
+I made on host -> `vagrant plugin install vagrant-vbguest` and it helps
+
+
+Started with PC-493 take task about reservation PC-539
+
+
+-- 27-09-2016 --
+
+empty interface{} in golang
+
+import(...)
+const(...)
+var(...)
+
+
+In go you can use methods on types
+
+func (receiver) FuncName(a, b int) float64 {...}
+
+
+Hi,
+in apiary we have 
+http://docs.warehouseavailability.apiary.io/#reference/0/reservation-collection
+and we don't have get method for getting reservation by id (reservation/r.CZ10.1234)
+I think we should have one.
+
+And for the time being we don't need separete endpoint for getting outdated reservations.
+As Jindra said if we need we can and it as a parameter. 
+
+
