@@ -1,5 +1,14 @@
 __ macra in tmpl __
 
+example
+
+#{SQLPLUS_HOME}/sqlplus #{IMWA_USER}/#{IMWA_USER_PASSWORD}@#{DB_CONNECTION} @{process_data_sql.tpl}
+
+if [ ! $PIPESTATUS = 0 ] ; then
+    exit 1
+fi
+
+
 ["SCHEMAS_COUNT"]=>
 string(1) "3"
 ["WEBCONFIG_DIRECTORY"]=>
@@ -54,3 +63,233 @@ string(4) "IMPP"
 string(14) "MARKETPLACET_1"
 ["SPHINX_ROLE"]=>
 string(11) "SPHINX_ROLE"
+
+
+
+consistency_check
+
+set_process_status
+update - DB_USER_REC . '.web_synchronizer_schema'
+
+$jobstat->job_start(); -> add info about status in oracle package then webadmin get their info from IMWTNEW_T2.run_programs_log
+
+process_schema
+
+
+CREATE SYNONYM
+NVC as COALESCE
+
+NOLOGGING
+
+PARTITIONAL
+
+
+
+SELECT variant_id,
+  CAST(media_id AS NUMBER(10,0)),
+  spras,
+  count(*)
+FROM ywa_var_media@IET.WORLD
+  group by variant_id, media_id, spras
+  having count(*) > 1
+
+/**
+ * table: variant_label
+ * prerequisites: shop, label, label_t
+ */
+BEGIN DBMS_OUTPUT.PUT_LINE (SYSDATE || ' : creating table VARIANT_LABEL'); END;
+/
+DECLARE
+  table_definition VARCHAR2(2000 CHAR);
+  partition_name VARCHAR2(100 CHAR);
+BEGIN
+  table_definition := '
+    CREATE TABLE variant_label (
+      variant_id,
+      label_id,
+      shop_id,
+      valid_from,
+      valid_to,
+      merged,
+      CONSTRAINT pk_variant_label PRIMARY KEY(variant_id, shop_id, label_id)
+    )
+    ORGANIZATION INDEX
+    PARTITION BY LIST
+    (
+      shop_id
+    )
+    (
+  ';
+
+  FOR shop_ids IN
+  (
+    SELECT shop_id,
+      COUNT(*) OVER () shops_count,
+      rownum
+    FROM IMWCT17.shop
+  )
+  LOOP
+    partition_name := 'shop_' || shop_ids.shop_id ;
+    table_definition := table_definition || ' PARTITION ' || partition_name || ' VALUES (''' || shop_ids.shop_id || ''')';
+    IF shop_ids.rownum < shop_ids.shops_count THEN
+      table_definition := table_definition || ', ';
+    END IF;
+  END LOOP;
+
+  table_definition := table_definition || ' ) ';
+  DBMS_OUTPUT.PUT_LINE(table_definition);
+END;
+/
+
+CREATE INDEX ix_variant_label_merged ON variant_label (merged) NOLOGGING;
+
+SET SERVEROUTPUT ON
+DECLARE
+    v_text VARCHAR2(10); -- declare
+BEGIN
+    v_text := 'Hello';  --assign
+    dbms_output.Put_line(v_text); --display
+END; 
+
+
+
+
+
+
+
+
+
+
+
+select * from IMWCL27.VARIANT_LABEL
+
+
+
+
+
+SELECT v.variant_id,
+        v.id,
+        v.shop_id,
+        count(*)
+      
+      FROM ywa_var_label@IET.WORLD v
+      JOIN IMWCT17.shop s ON (s.shop_id = v.shop_id)
+      JOIN IMWCT17.label l ON (l.label_id = v.id)
+      JOIN IMWCT17.label_t lt ON (lt.label_id = l.label_id AND lt.language_id = s.language_id)
+    
+  group by v.variant_id, v.id, v.shop_id
+  having count(*) > 1
+      
+      
+      -----------
+      
+      
+ALTER SESSION SET CURRENT_SCHEMA=IMWCT17;
+ALTER SESSION SET NLS_DATE_FORMAT='HH24:MI:SS';
+SET SERVEROUTPUT ON;
+
+/* functions needed in tables_sql.tpl (=> cannot be in functions_sql.tpl) */
+CREATE OR REPLACE
+FUNCTION sap_bool(val VARCHAR2) RETURN VARCHAR2
+AS
+BEGIN
+  CASE val
+  WHEN 'X' THEN
+    RETURN 't';
+  WHEN 'T' THEN
+    RETURN 't';
+  WHEN 't' THEN
+    RETURN 't';
+  ELSE
+    RETURN 'f';
+  END CASE;
+END;
+/
+
+CREATE OR REPLACE
+FUNCTION is_valid_date(value NUMBER) RETURN NUMBER
+IS
+  valid_date DATE;
+BEGIN
+  SELECT TO_DATE(value) INTO valid_date
+  FROM dual;
+    RETURN 1;
+  EXCEPTION
+    WHEN OTHERS THEN
+      RETURN 0;
+END;
+/
+
+
+/**
+ * table: variant_label
+ * prerequisites: shop, label, label_t
+ */
+BEGIN DBMS_OUTPUT.PUT_LINE (SYSDATE || ' : creating table VARIANT_LABEL'); END;
+/
+DECLARE
+  table_definition VARCHAR2(2000 CHAR);
+  partition_name VARCHAR2(100 CHAR);
+BEGIN
+  table_definition := '
+    CREATE TABLE variant_label (
+      variant_id,
+      label_id,
+      shop_id,
+      valid_from,
+      valid_to,
+      merged,
+      CONSTRAINT pk_variant_label PRIMARY KEY(variant_id, shop_id, label_id)
+    )
+    ORGANIZATION INDEX
+    PARTITION BY LIST
+    (
+      shop_id
+    )
+    (
+  ';
+
+  FOR shop_ids IN
+  (
+    SELECT shop_id,
+      COUNT(*) OVER () shops_count,
+      rownum
+    FROM shop
+  )
+  LOOP
+    partition_name := 'shop_' || shop_ids.shop_id ;
+    table_definition := table_definition || ' PARTITION ' || partition_name || ' VALUES (''' || shop_ids.shop_id || ''')';
+    IF shop_ids.rownum < shop_ids.shops_count THEN
+      table_definition := table_definition || ', ';
+    END IF;
+  END LOOP;
+
+  table_definition := table_definition || ' ) ';
+
+  table_definition := table_definition || '
+    NOLOGGING AS
+      SELECT vl.variant_id,
+        vl.id,
+        vl.shop_id,
+        CAST(TO_TIMESTAMP_TZ(vl.valid_from || '' +00:00'', ''YYYYMMDDHH24MISS TZH:TZM'') AT TIME ZONE SESSIONTIMEZONE AS DATE),
+        CASE WHEN valid_to > 99990101000000 OR valid_to <= 0 THEN
+          TO_DATE(''99991231235959'', ''YYYYMMDDHH24MISS'')
+        ELSE
+          CAST(TO_TIMESTAMP_TZ(vl.valid_to || '' +00:00'', ''YYYYMMDDHH24MISS TZH:TZM'') AT TIME ZONE SESSIONTIMEZONE AS DATE)
+        END,
+        ''f''
+      FROM ywa_var_label@IET.WORLD vl
+      JOIN shop s ON (s.shop_id = vl.shop_id)
+      JOIN label l ON (l.label_id = vl.id)
+      JOIN label_t lt ON (lt.label_id = l.label_id AND lt.language_id = s.language_id)
+  ';
+    DBMS_OUTPUT.PUT_LINE(table_definition);
+
+  EXECUTE IMMEDIATE (table_definition);
+END;
+/
+      
+      
+      
+      
+      
