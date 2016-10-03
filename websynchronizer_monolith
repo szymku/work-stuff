@@ -1,0 +1,56 @@
+__ macra in tmpl __
+
+["SCHEMAS_COUNT"]=>
+string(1) "3"
+["WEBCONFIG_DIRECTORY"]=>
+string(14) "/www/webconfig"
+["CONF_DIRECTORY"]=>
+string(46) "/var/www/html/skulikowski/projects/mall/conf.d"
+["BACKEND_DIRECTORY"]=>
+string(55) "/var/www/html/skulikowski/projects/mall/backend/scripts"
+["SQLPLUS_HOME"]=>
+string(8) "/usr/bin"
+["RUNTIME_DIRECTORY"]=>
+string(27) "/tmp/web_synchronizer_imwct"
+["SAP_DATABASE_LINK"]=>
+string(9) "IET.WORLD"
+["SCHEMA_PREFIX"]=>
+string(5) "IMWCT"
+["DB_CONNECTION"]=>
+string(10) "IWTSAP2WEB"
+["IMWA_USER"]=>
+string(4) "IMWA"
+["IMWA_USER_PASSWORD"]=>
+string(20) "pl6XmuQRLPy5Mof2Smnl"
+["IMWC_USER_PASSWORD"]=>
+string(20) "zUXgUyPBxDCG1btZrFM0"
+["IMWC_USER_TABLESPACE"]=>
+string(8) "IMWTRANS"
+["DB_USER_REC"]=>
+string(10) "IMWTNEW_T2"
+["DB_USER_SYN"]=>
+string(5) "IMWCT"
+["DB_USER_MEDIA"]=>
+string(11) "IMWMEDIA_T2"
+["DB_USER_MAINTENANCE"]=>
+string(14) "MAINTENANCE_T1"
+["DB_USER_DBFS"]=>
+string(7) "IMWDBFS"
+["DB_USER_SAP"]=>
+string(6) "SAPSR3"
+["DB_USER_OLAP"]=>
+string(7) "IMWOLAP"
+["DB_USER_SMS"]=>
+string(7) "SMSGATE"
+["DB_USER_TODOLIST"]=>
+string(8) "todolist"
+["DB_USER_ADWORDS"]=>
+string(10) "ADWORDST_1"
+["DB_USER_SUPER"]=>
+string(4) "IMWA"
+["DB_USER_SAPOSV"]=>
+string(4) "IMPP"
+["DB_USER_MARKETPLACE"]=>
+string(14) "MARKETPLACET_1"
+["SPHINX_ROLE"]=>
+string(11) "SPHINX_ROLE"
