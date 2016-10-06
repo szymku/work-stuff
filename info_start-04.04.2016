@@ -580,3 +580,15 @@ And for the time being we don't need separete endpoint for getting outdated rese
 As Jindra said if we need we can and it as a parameter. 
 
 
+-- 03-10-2016 --
+
+On Friday I've been woriking on bug 555
+What I did:
+  - check this step which can cause the error
+  - query the SAP with the same valueas as in procces_data.sql(I've found that there is no duplicated keys which could validate PK)
+  - today morning I ran websync ones again and around 11am I will see if the oracle error occurs again
+
+
+
+
+-- 04-10-2016 --

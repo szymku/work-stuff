@@ -1,0 +1,32 @@
+EVENT 2016-10-04 06:34:07     Executing supplier feed id #5734
+
+EVENT 2016-10-04 07:19:50     Executing supplier feed id #4554
+
+EVENT 2016-10-04 11:20:56     Executing supplier feed id #4554
+
+EVENT 2016-10-04 14:09:22     Executing supplier feed id #4554
+
+EVENT 2016-10-04 18:17:04     Executing supplier feed id #4554
+
+EVENT 2016-10-05 07:16:05     Executing supplier feed id #5734
+
+EVENT 2016-10-05 07:13:53     Executing supplier feed id #4554
+
+
+supplier feeds on test are run 
+from both test and prod nodes 
+
+http://dkron-server.cs.mall.test/dashboard/jobs/supplier_feed/executions
+
+is seen in logstash
+$output_log->print_event('Get SAP call result');
+
+
+
+(4505,54916,54441,54475,54296,54344,54340,54613,54572,54360,54506,54369,54515,54292,54324,54249,54532,54600,54305,54523,54432,54894,54195,11119,10781,54614,56527,54856,53097,53049,56688,54538,55191,51441,10742,54409,54582,54447,54264,54396,54383,54581,52245,54610,53562,54478,55763,56751,57155,57806,11097,52865,53023,54499,54357,55778,58471,11043,56499,11050,10822,58334,54570,54827,58126,54473,54492,54425,54304,54934,57634,54502,10274,52613,53686,55414,53232,54436,56084,57642,51082,10626,10236,56699,54349)
+
+script every time 
+
+
+
+default['nrh_phpserver']['extensions']['ssh2'] = false change to true

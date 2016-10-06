@@ -75,6 +75,7 @@ $jobstat->job_start(); -> add info about status in oracle package then webadmin 
 
 process_schema
 
+marketplace_tpl.sql
 
 CREATE SYNONYM
 NVC as COALESCE
@@ -82,6 +83,10 @@ NVC as COALESCE
 NOLOGGING
 
 PARTITIONAL
+
+web sync logs on test env - http://cz-dc-v-213.mall.local:8096/
+
+to run websync manually delete row with status "F" from IMWTNEW_T2.WEB_SYNCHRONIZER_SCHEMA
 
 
 
