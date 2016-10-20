@@ -1,0 +1,39 @@
+SF-25 cleanup dependencies
+
+How to test if everything works?
+- use sql update on oracle db
+
+
+what removed:
+
+
+How the actual number of schema is loaded?
+
+
+needed:
+$db = Core::get('DB');
+ConfigParser::  -> save data to const
+
+for what is http folder ?
+
+		WHERE src.source_id in (4554, 181, 2552, 67, 4112, 191,17,69)
+
+
+remove from DI/Container.php
+- Angular service 
+- Captcha service
+- Newsletter service
+- RabbitMQ service
+
+
+
+CurrentSchemaLoader was for getting data about changing schema
+
+
+schema for saving blob
+IMWDBFS
+
+
+select * from imwtnew_t2.purchase 
+where TRUNC(exported) = '09/07/01';
+

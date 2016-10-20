@@ -1,0 +1,21 @@
+SF-40 cookbook SF
+
+copy .chef to C:/ from H:/
+
+berkshelf - dependency manager 
+
+knife - connect between local and chef servers
+
+kitchen - test in local
+
+
+for test 
+kitchen create
+kitchen converge
+kitchen login(optional)
+kitchen verify
+kitchen distroy
+
+
+do attributes/default.rb 
+default['nrh_phpserver']['httpd_monitor'] = false

@@ -1,0 +1,32 @@
+PC-569 Missing alternatives on product details
+
+[POST]
+papi.skulikowski.dev/v1/url/lg-55lf652v
+{"shopId":"CZ10MA","outputFilter":"ExportArray","alternatives":true,"accessory":true,"bonusSet":true,"gift":true,"successory":true,"httpsLinks":false,"variantStickers":{"availability":1}}
+
+
+App/Model/ProductSearch.php
+
+
+$this->productSearch->setLoadAlternatives($this->options['alternatives']);
+
+In ProductIterator
+	$alternativeIds = $product->getAlternativeProductsIds();
+
+
+In DI/Container created are services
+
+es_client  
+
+Model/ProductSearch
+Model/MenuSearch
+
+outputFilter -> ArrayExport
+
+
+
+823633 - id there are on test but not on prod
+
+874867 - are accessories and alternatives
+
+the problem was in hardcoded IMWTNEW_T2 table in ProductDbMapper

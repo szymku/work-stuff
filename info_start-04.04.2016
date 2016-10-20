@@ -331,6 +331,11 @@ current_schema in imwtnew_t2 ->
 public database links
 
 
+
+
+
+
+
 cagtegory-api test storage -> http://gitlab.mall.local/product-team/categories-test
 
 
@@ -591,4 +596,24 @@ What I did:
 
 
 
--- 04-10-2016 --
+-- 12-10-2016 --
+
+from grooming -----
+
+in windows it's enough to uncomment a module to enable one
+
+
+edit json, rest fields should be read-only
+create one action for editing in webadmin code
+then replace in db
+redownload or not - should be checks 
+
+
+PC-520
+priorities refresh archive and refresh promotions
+
+
+we need confirm2 for that 
+we should use the same queue p1 -> p1; p2 -> p2;
+
+-----

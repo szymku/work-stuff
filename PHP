@@ -1,0 +1,6 @@
+PHP
+
+Decorator Pattern 
+Do something with an object without changing the object itself.
+
+Iterator Pattern

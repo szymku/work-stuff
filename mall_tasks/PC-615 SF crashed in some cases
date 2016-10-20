@@ -1,0 +1,6 @@
+PC-615 SF crashed in some cases
+
+
+9363, 10143, 10303, 9783 - fail in process phase
+
+10263, 10403, 10363, 9363, 10143, 10303, 10323, 9783

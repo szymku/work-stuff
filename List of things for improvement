@@ -1,16 +1,16 @@
-List of things for improvement
+The way of improvement.
 
-
-concentrate on 1 thing, there is one task for doing, do it and go further
+- concentrate on 1 thing, there is one task to do, do it and go further
 (sometimes I check things not strictly connected with particular task and... finally it goes anywhere)
 
-some tasks with oracle db takes to much time - oracle procedures, jobs (PLSQL and SQL should be improved)
+- some tasks with oracle db takes to much time - oracle procedures, jobs (PLSQL and SQL should be improved)
 
-decrease time for looking information that was ones found (kibana, logstash and generally in system) - prepare more accurate notes(where and how was found, step by step) 
+- decrease time for looking information that was ones found (kibana, logstash and generally in system) - prepare more accurate notes(where and how was found, step by step) 
 
-write things down - don't think "I will remember it"
+- write things down - don't think "I will remember it"
 
-chef, consul and infrastructure - how the whole architecture is connected; what depends on what
+- chef, consul and infrastructure - how the whole architecture is connected; what depends on what
 
-be better prepered for standups(say clearly what was done, maybe why not and so on; be more communicative) take some time for preparation(10 minuts before)  
+- be better prepared for standups(say clearly what was done, maybe why not and so on; be more communicative) take some time for preparation(10 minutes before)  
+
 

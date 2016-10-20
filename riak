@@ -1,0 +1,19 @@
+riak
+
+install on ubuntu 14.04
+
+--add key 
+curl https://packagecloud.io/gpg.key | sudo apt-key add -
+
+
+troubleshooting
+
+ulimit -n not enought
+I have 1024 file descriptor possible
+
+
+
+
+
+=====
+sysctl -> configure kernel parameters at runtime
