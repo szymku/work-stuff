@@ -1,0 +1,49 @@
+discipline
+
+            08 09 10 11 12 13 14 15 16 17
+
+14-11-2016  -  -  x  x  -  -  -  -  -  -
+15-11-2016  -  -  -  -  -  -  -  -  -  -
+16-11-2016  -  -  -  -  -  -  -  -  -  -
+17-11-2016  -  x  -  -  -  -  -  -  -  -
+17-11-2016  -  -  -  -  -  -  -  -  -  -
+18-11-2016  -  -  -  -  -  -  -  -  -  -
+--
+21-11-2016  -  -  -  -  -  -  -  -  -  -
+22-11-2016  -  -  -  -  -  -  -  -  -  -
+23-11-2016  x  x  x  -  -  -  -  -  -  -
+24-11-2016  X  -  -  -  -  
+
+
+
+### Clear expired reservations [DELETE /reservation/expired]
+
+This endpoint is responsible for cleaning outdated reservation and reservation confirmation tokens.
+
++ Request (application/json)
+
+        {
+            "bug": "Normally this request should be empty ...but
+                    here is a bug in dredd test environment and the request can not be empty because tests hanging forever.
+                    here is a link to this bug: https://github.com/apiaryio/dredd/issues/556
+                    TODO remove this request after bug in dredd will be fixed"
+        }
+
+
++ Response 200 (application/json; charset=UTF-8)
+
+        {
+            "deleted_reservations": 10,
+            "deleted_confirmed_reservations": 5
+        }
+
++ Response 500 (application/json; charset=UTF-8)
+
+    + Attributes (Error)
+
+    + Body
+
+            {
+               "message": "Garbage collector failed",
+               "errorCode": "ERROR"
+            }

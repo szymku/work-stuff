@@ -617,3 +617,137 @@ we need confirm2 for that
 we should use the same queue p1 -> p1; p2 -> p2;
 
 -----
+
+
+
+http://pastebin.com/ -> for pastin code
+
+
+-- 08-11-2016 --
+
+json schema - validation json
+
+mson - markdown syntax for object notation
+
+
+-- 15-11-2016 --
+
+mesg: ttyname failed: Inappropriate ioctl for device
+
+
+
+
+
+
+
+
+
+xdebug for php -> important to debug in automatic, precise way 
+
+
+
+
+mkdir artifacts
+rm -f artifacts/*
+mkdir bin
+mkdir tests
+cp src/warehouse-availability/warehouse-availability bin/warehouse-availability
+cp src/warehouse-availability/tests/dredd.yml tests/
+tar cfz artifacts/warehouse-availability-${bamboo.buildNumber}.tar.gz bin/warehouse-availability tests
+
+
+mkdir artifacts
+rm -f artifacts/*
+mkdir bin
+cp src/warehouse-availability/warehouse-availability bin/warehouse-availability
+tar cfz artifacts/warehouse-availability-${bamboo.buildNumber}.tar.gz bin/warehouse-availability
+
+
+
+PHP-FPM (FastCGI Process Manager) is an alternative PHP FastCGI implementation with some additional features useful for sites of any size, especially busier sites.
+
+
+-- 16-11-2016 --
+
+
+node.default['dkron']['config']['tags']['role'] = "warehouse-availability"
+include_recipe 'nrh-dkron::agent'
+
+-- 17-11-2016 --
+
+Michal Taborsky use strace ;)
+strace is debuging tool
+
+system call?
+
+opcode - operation code
+
+instruction set - processor
+
+
+-- 18-11-2016 --
+
+PC-710
+
+Yesterday I tried to run functional tests and dredd tests with bamboo build plan.
+What I did:
+- run was on bamboo machine 
+- try to run test on it, but I have errors 
+- try run with background and using some linux tools like nohup
+- it caused some errors and finally I fail
+
+My proposals:
+1. after successful deploy on test run functional tests manually using dkron
+  if everything is OK we can deploy on prod
+2. create dedicated machine only for functional tests and (in build phase)do all test on that machine   
+  if test pass continue with deploy to test server
+3. ?  
+
+
+in bamboo deploy to servers task
+--package warehouse-availability --release ${bamboo.deploy.release} --environment test --role nrh_warehouse_availability_pretest --base /opt/warehouse-availability-service --post-command "service warehouse-availability restart && cd /opt/warehouse-availability-service/current && dredd docs/blueprint.apib http://warehouse-availability-pretest.product.osdc1.mall.local:8138 --language go --hookfiles bin/dreddhooks"
+
+buildKey=WAS-BUIL-JOB1
+
+
+-- 23-11-2016 --
+
+from papi
+  // allow using API from website
+      header('Access-Control-Allow-Origin: *');
+      header(sprintf('HTTP/1.1 %s', $this->get_http_status()));
+      header(sprintf('Content-Type: %s', $this->get_content_type()));
+
+
+
+-- 25-11-2016 --
+
+for feed generator
+http://webadmin.mall/articles-export/rule
+
+
+-- 27-11-2016 --
+
+< POSTMAN >
+postman tests - nice possibility 
+important to use collections -> faster work
+set global variable for easily work
+
+< product-api >
+variants are with param1 and param2 
+still use shop from Oracle DB - see Configuration.php
+
+Query/SearchQuery.php
+
+QueryBuilderAbstract->__construct only esClient is set
+QueryBuilderAbstract->__create initial values
+
+
+url-archive  ESUrlArchiveRepository
+
+/_cat/indices?v
+_mapping?pretty=true
+
+api_total_time
+
+-- 28-11-2016 --

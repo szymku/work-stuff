@@ -3,4 +3,46 @@ PC-615 SF crashed in some cases
 
 9363, 10143, 10303, 9783 - fail in process phase
 
-10263, 10403, 10363, 9363, 10143, 10303, 10323, 9783
+10263, 10403, 10363, 9363, 10143, 10303, 10323, 9783,10403, 9865
+
+
+select * from MAINTENANCE_T1.SF_SOURCE
+where source_id in (10263, 10403, 10363, 9363, 10143, 10303, 10323, 9783,10403, 9865, 1151, 7823);
+ 
+select * from MAINTENANCE_T1.SF_SOURCE
+where source_id = 7823;
+  
+ 
+ select * from MAINTENANCE_T1.SF_SUPPLIER where supplier_id = 52593
+ 
+ SELECT src.source_id,
+                                src.supplier_id,
+                                src.purchase_organization,
+                                sup.name,
+                                src.url,
+                                active
+                        FROM MAINTENANCE_T1.sf_supplier sup
+                        JOIN MAINTENANCE_T1.sf_source src ON (src.supplier_id = sup.supplier_id)
+                        WHERE src.source_id IN (10263, 10403, 10363, 9363, 10143, 10303, 10323, 9783,10403, 9865)
+                        
+                        
+                        Insert into MAINTENANCE_T1.SF_SUPPLIER (SUPPLIER_ID,NAME,DEFAULT_IN_STOCK,IDENTIFY_BY,CROSSCHECK) values ('52593','BRÜCK','1','ean','f');
+                        
+
+select * from MAINTENANCE_T1.SF_SUPPLIER 
+where SUPPLIER_ID = 11724;
+
+select * from MAINTENANCE_T1.SF_SOURCE 
+where SUPPLIER_ID = 11724;
+
+Insert into MAINTENANCE_T1.SF_SUPPLIER (SUPPLIER_ID,NAME,DEFAULT_IN_STOCK,IDENTIFY_BY,CROSSCHECK) values ('11724','GM ELECTRONIC','1','external_id','f');
+
+SELECT distinct source_id from MAINTENANCE_T1.SF_SCHEDULE
+where day = 3; 
+
+Insert into MAINTENANCE_T1.SF_SUPPLIER (SOURCE_ID,SUPPLIER_ID,PURCHASE_ORGANIZATION,CURRENCY,PROTOCOL,URL,FILE_FORMAT,AUTH_METHOD,USERNAME,PASSWORD,SAVE_PRICE,SAVE_STOCK,LAST_SUCCESS,ACTIVE,FORCERUN,RUNNING,XML_ELEMENT,VARIANT_ID,EXTERNAL_ID,EAN,STOCK,PRICE,LOADER,PARSER,PRICE_2,PRICE_3,PRICE_4,LAST_RUNNING,STATUS_DOWNLOAD) values ('7823','11724','CZA0','CZK ','http','www.gme.cz/-1?password=1470990156','xml',null,null,null,'f','t',null,'t','f','f','->item_list->item',null,'["id"]',null,'->stock_quantity',null,'Webservice',null,null,null,null,to_timestamp('16/10/19 11:45:00,213838000','RR/MM/DD HH24:MI:SSXFF'),'ERR');
+
+
+select * from MAINTENANCE.SF_EMAIL
+
+

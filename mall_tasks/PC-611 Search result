@@ -1,1 +1,44 @@
 PC-611 Search result
+
+
+what is media? some jpg, png, mp3, blob etc.
+
+
+
+
+	user_rec: IMWTNEW_T2
+	user_marketplace: MARKETPLACET_1
+	user_media: IMWMEDIA_T2
+
+
+product_type_id can be around 3000 for one id e.x NE005
+
+4646 -> number of product_type_id 
+
+product_type for example: młynki do kawy, 16:9 LCD TV, Filtry
+
+menu_item_id connect products with param
+
+
+  "_source": [
+    "url_key",
+    "main_variant_availability",
+    "title_full",
+    "main_menu_text",
+    "brief"
+  ],
+
+  fulltext search is in applyPostOptions();
+
+
+in Product.php there is $this->processData($data, $params) and there is add 
+
+
+I was checking again this search and I am sure it works as I expected
+With term "samsung" are a lot of testing(dummy) stuff on test
+
+With full responsibility I can move it to prod.
+
+
+the most used words in search term 
+http://kibana.mall.local/#/dashboard/Search-terms-on-Web?_g=(refreshInterval:(display:Off,pause:!f,section:0,value:0),time:(from:now-1h,mode:quick,to:now))&_a=(filters:!(),panels:!((col:1,id:Search-terms-on-Web_EVENTS-OVER-TIME,row:1,size_x:12,size_y:4,type:visualization),(col:1,id:Search-terms-on-Web_SEARCH-TERMS,row:5,size_x:12,size_y:12,type:visualization)),query:(query_string:(analyze_wildcard:!t,query:'*')),title:'Search%20terms%20on%20Web')

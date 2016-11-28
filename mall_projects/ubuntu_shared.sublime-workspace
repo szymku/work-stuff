@@ -1,0 +1,769 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"sh",
+				"shelveFile"
+			],
+			[
+				"use",
+				"useTruck"
+			],
+			[
+				"pc",
+				"pcg"
+			],
+			[
+				"us",
+				"useRail"
+			],
+			[
+				"Shi",
+				"ShippingDelegat"
+			],
+			[
+				"imp",
+				"implements"
+			],
+			[
+				"v",
+				"vm"
+			],
+			[
+				"print",
+				"print_r"
+			],
+			[
+				"hash",
+				"hash_algos"
+			],
+			[
+				"vd",
+				"vde\tPHP: Dump information about a variable and exit"
+			],
+			[
+				"arra",
+				"array_combine"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "/C/projects/on_vagrant/ubuntu/logstash-2/logstash-apache.conf",
+			"settings":
+			{
+				"buffer_size": 439,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "{\"message\":\"Server internal error\",\"context\":{\"status\":{\"code\":\"ERROR\",\"message\":\"Server internal error\"},\"errorMsg\":\"message APP error\",\"errorTrace\":\"#0 {main}\"},\"level\":400,\"level_name\":\"ERROR\",\"channel\":\"yottly-api\",\"datetime\":{\"date\":\"2016-10-25 10:05:43.467743\",\"timezone_type\":3,\"timezone\":\"UTC\"},\"extra\":[]}\n{\"message\":\"Server internal error\",\"context\":{\"status\":{\"code\":\"ERROR\",\"message\":\"Server internal error\"},\"errorMsg\":\"message APP error\",\"errorTrace\":\"#0 {main}\"},\"level\":400,\"level_name\":\"ERROR\",\"channel\":\"yottly-api\",\"datetime\":{\"date\":\"2016-10-25 10:07:01.536695\",\"timezone_type\":3,\"timezone\":\"UTC\"},\"extra\":[]}\n{\"message\":\"Server internal error\",\"context\":{\"status\":{\"code\":\"ERROR\",\"message\":\"Server internal error\"},\"errorMsg\":\"message APP error\",\"errorTrace\":\"#0 {main}\"},\"level\":400,\"level_name\":\"ERROR\",\"channel\":\"yottly-api\",\"datetime\":{\"date\":\"2016-10-25 10:10:31.398712\",\"timezone_type\":3,\"timezone\":\"UTC\"},\"extra\":[]}\n{\"message\":\"Server internal error\",\"context\":{\"status\":{\"code\":\"ERROR\",\"message\":\"Server internal error\"},\"errorMsg\":\"message APP error\",\"errorTrace\":\"#0 {main}\"},\"level\":400,\"level_name\":\"ERROR\",\"channel\":\"yottly-api\",\"datetime\":{\"date\":\"2016-10-25 10:10:32.157491\",\"timezone_type\":3,\"timezone\":\"UTC\"},\"extra\":[]}\n{\"message\":\"Server internal error\",\"context\":{\"status\":{\"code\":\"ERROR\",\"message\":\"Server internal error\"},\"errorMsg\":\"message APP error\",\"errorTrace\":\"#0 {main}\"},\"level\":400,\"level_name\":\"ERROR\",\"channel\":\"yottly-api\",\"datetime\":{\"date\":\"2016-10-25 10:10:32.925045\",\"timezone_type\":3,\"timezone\":\"UTC\"},\"extra\":[]}\n{\"message\":\"Server internal error\",\"context\":{\"status\":{\"code\":\"ERROR\",\"message\":\"Server internal error\"},\"errorMsg\":\"message APP error\",\"errorTrace\":\"#0 {main}\"},\"level\":400,\"level_name\":\"ERROR\",\"channel\":\"yottly-api\",\"datetime\":{\"date\":\"2016-10-25 10:10:33.822708\",\"timezone_type\":3,\"timezone\":\"UTC\"},\"extra\":[]}\n{\"message\":\"Server internal error\",\"context\":{\"status\":{\"code\":\"ERROR\",\"message\":\"Server internal error\"},\"errorMsg\":\"message APP error\",\"errorTrace\":\"#0 {main}\"},\"level\":400,\"level_name\":\"ERROR\",\"channel\":\"yottly-api\",\"datetime\":{\"date\":\"2016-10-25 10:16:25.985811\",\"timezone_type\":3,\"timezone\":\"UTC\"},\"extra\":[]}\n{\"message\":\"Server internal error\",\"context\":{\"status\":{\"code\":\"ERROR\",\"message\":\"Server internal error\"},\"errorMsg\":\"message APP error\",\"errorTrace\":\"#0 {main}\"},\"level\":400,\"level_name\":\"ERROR\",\"channel\":\"yottly-api\",\"datetime\":{\"date\":\"2016-10-25 10:16:26.827640\",\"timezone_type\":3,\"timezone\":\"UTC\"},\"extra\":[]}\n{\"message\":\"Server internal error\",\"context\":{\"status\":{\"code\":\"ERROR\",\"message\":\"Server internal error\"},\"errorMsg\":\"message APP error\",\"errorTrace\":\"#0 {main}\"},\"level\":400,\"level_name\":\"ERROR\",\"channel\":\"yottly-api\",\"datetime\":{\"date\":\"2016-10-25 10:16:27.647055\",\"timezone_type\":3,\"timezone\":\"UTC\"},\"extra\":[]}\n{\"message\":\"Server internal error\",\"context\":{\"status\":{\"code\":\"ERROR\",\"message\":\"Server internal error\"},\"errorMsg\":\"message APP error\",\"errorTrace\":\"#0 {main}\"},\"level\":400,\"level_name\":\"ERROR\",\"channel\":\"yottly-api\",\"datetime\":{\"date\":\"2016-10-25 10:16:28.434225\",\"timezone_type\":3,\"timezone\":\"UTC\"},\"extra\":[]}\n{\"message\":\"Server internal error\",\"context\":{\"status\":{\"code\":\"ERROR\",\"message\":\"Server internal error\"},\"errorMsg\":\"message APP error\",\"errorTrace\":\"#0 {main}\"},\"level\":400,\"level_name\":\"ERROR\",\"channel\":\"yottly-api\",\"datetime\":{\"date\":\"2016-10-25 10:17:36.752271\",\"timezone_type\":3,\"timezone\":\"UTC\"},\"extra\":[]}\n{\"message\":\"Server internal error\",\"context\":{\"status\":{\"code\":\"ERROR\",\"message\":\"Server internal error\"},\"errorMsg\":\"message APP error\",\"errorTrace\":\"#0 {main}\"},\"level\":400,\"level_name\":\"ERROR\",\"channel\":\"yottly-api\",\"datetime\":{\"date\":\"2016-10-25 10:17:37.698624\",\"timezone_type\":3,\"timezone\":\"UTC\"},\"extra\":[]}\n{\"message\":\"Server internal error\",\"context\":{\"status\":{\"code\":\"ERROR\",\"message\":\"Server internal error\"},\"errorMsg\":\"message APP error\",\"errorTrace\":\"#0 {main}\"},\"level\":400,\"level_name\":\"ERROR\",\"channel\":\"yottly-api\",\"datetime\":{\"date\":\"2016-10-25 10:19:27.496519\",\"timezone_type\":3,\"timezone\":\"UTC\"},\"extra\":[]}\n{\"message\":\"Server internal error\",\"context\":{\"status\":{\"code\":\"ERROR\",\"message\":\"Server internal error\"},\"errorMsg\":\"message APP error\",\"errorTrace\":\"#0 {main}\"},\"level\":400,\"level_name\":\"ERROR\",\"channel\":\"yottly-api\",\"datetime\":{\"date\":\"2016-10-25 10:19:28.290749\",\"timezone_type\":3,\"timezone\":\"UTC\"},\"extra\":[]}\n{\"message\":\"Server internal error\",\"context\":{\"status\":{\"code\":\"ERROR\",\"message\":\"Server internal error\"},\"errorMsg\":\"message APP error\",\"errorTrace\":\"#0 {main}\"},\"level\":400,\"level_name\":\"ERROR\",\"channel\":\"yottly-api\",\"datetime\":{\"date\":\"2016-10-25 10:19:29.009279\",\"timezone_type\":3,\"timezone\":\"UTC\"},\"extra\":[]}\n{\"message\":\"Server internal error\",\"context\":{\"status\":{\"code\":\"ERROR\",\"message\":\"Server internal error\"},\"errorMsg\":\"message APP error\",\"errorTrace\":\"#0 {main}\"},\"level\":400,\"level_name\":\"ERROR\",\"channel\":\"yottly-api\",\"datetime\":{\"date\":\"2016-10-25 10:20:16.612654\",\"timezone_type\":3,\"timezone\":\"UTC\"},\"extra\":[]}\n{\"message\":\"Server internal error\",\"context\":{\"status\":{\"code\":\"ERROR\",\"message\":\"Server internal error\"},\"errorMsg\":\"message APP error\",\"errorTrace\":\"#0 {main}\"},\"level\":400,\"level_name\":\"ERROR\",\"channel\":\"yottly-api\",\"datetime\":{\"date\":\"2016-10-25 10:20:18.505869\",\"timezone_type\":3,\"timezone\":\"UTC\"},\"extra\":[]}\n{\"message\":\"Server internal error\",\"context\":{\"status\":{\"code\":\"ERROR\",\"message\":\"Server internal error\"},\"errorMsg\":\"message APP error\",\"errorTrace\":\"#0 {main}\"},\"level\":400,\"level_name\":\"ERROR\",\"channel\":\"yottly-api\",\"datetime\":{\"date\":\"2016-10-25 10:20:40.439668\",\"timezone_type\":3,\"timezone\":\"UTC\"},\"extra\":[]}\n{\"message\":\"Server internal error\",\"context\":{\"status\":{\"code\":\"ERROR\",\"message\":\"Server internal error\"},\"errorMsg\":\"message APP error\",\"errorTrace\":\"#0 {main}\"},\"level\":400,\"level_name\":\"ERROR\",\"channel\":\"yottly-api\",\"datetime\":{\"date\":\"2016-10-25 10:20:48.362070\",\"timezone_type\":3,\"timezone\":\"UTC\"},\"extra\":[]}\n{\"message\":\"Server internal error\",\"context\":{\"status\":{\"code\":\"ERROR\",\"message\":\"Server internal error\"},\"errorMsg\":\"message APP error\",\"errorTrace\":\"#0 {main}\"},\"level\":400,\"level_name\":\"ERROR\",\"channel\":\"yottly-api\",\"datetime\":{\"date\":\"2016-10-25 10:20:49.033235\",\"timezone_type\":3,\"timezone\":\"UTC\"},\"extra\":[]}\n{\"message\":\"Server internal error\",\"context\":{\"status\":{\"code\":\"ERROR\",\"message\":\"Server internal error\"},\"errorMsg\":\"message APP error\",\"errorTrace\":\"#0 {main}\"},\"level\":400,\"level_name\":\"ERROR\",\"channel\":\"yottly-api\",\"datetime\":{\"date\":\"2016-10-25 10:20:49.751718\",\"timezone_type\":3,\"timezone\":\"UTC\"},\"extra\":[]}\n{\"message\":\"Server internal error\",\"context\":{\"status\":{\"code\":\"ERROR\",\"message\":\"Server internal error\"},\"errorMsg\":\"message APP error\",\"errorTrace\":\"#0 {main}\"},\"level\":400,\"level_name\":\"ERROR\",\"channel\":\"yottly-api\",\"datetime\":{\"date\":\"2016-10-25 10:25:55.957468\",\"timezone_type\":3,\"timezone\":\"UTC\"},\"extra\":[]}\n{\"message\":\"Server internal error\",\"context\":{\"status\":{\"code\":\"ERROR\",\"message\":\"Server internal error\"},\"errorMsg\":\"message APP error\",\"errorTrace\":\"#0 {main}\"},\"level\":400,\"level_name\":\"ERROR\",\"channel\":\"yottly-api\",\"datetime\":{\"date\":\"2016-10-25 10:25:56.923485\",\"timezone_type\":3,\"timezone\":\"UTC\"},\"extra\":[]}\n{\"message\":\"Server internal error\",\"context\":{\"status\":{\"code\":\"ERROR\",\"message\":\"Server internal error\"},\"errorMsg\":\"message APP error\",\"errorTrace\":\"#0 {main}\"},\"level\":400,\"level_name\":\"ERROR\",\"channel\":\"yottly-api\",\"datetime\":{\"date\":\"2016-10-25 10:28:06.419894\",\"timezone_type\":3,\"timezone\":\"UTC\"},\"extra\":[]}\n{\"message\":\"Server internal error\",\"context\":{\"status\":{\"code\":\"ERROR\",\"message\":\"Server internal error\"},\"errorMsg\":\"message APP error\",\"errorTrace\":\"#0 {main}\"},\"level\":400,\"level_name\":\"ERROR\",\"channel\":\"yottly-api\",\"datetime\":{\"date\":\"2016-10-25 10:28:07.103284\",\"timezone_type\":3,\"timezone\":\"UTC\"},\"extra\":[]}\n{\"message\":\"Server internal error\",\"context\":{\"status\":{\"code\":\"ERROR\",\"message\":\"Server internal error\"},\"errorMsg\":\"message APP error\",\"errorTrace\":\"#0 {main}\"},\"level\":400,\"level_name\":\"ERROR\",\"channel\":\"yottly-api\",\"datetime\":{\"date\":\"2016-10-25 10:28:07.873762\",\"timezone_type\":3,\"timezone\":\"UTC\"},\"extra\":[]}\n{\"message\":\"Server internal error\",\"context\":{\"status\":{\"code\":\"ERROR\",\"message\":\"Server internal error\"},\"errorMsg\":\"message APP error\",\"errorTrace\":\"#0 {main}\"},\"level\":400,\"level_name\":\"ERROR\",\"channel\":\"yottly-api\",\"datetime\":{\"date\":\"2016-10-25 10:28:08.678138\",\"timezone_type\":3,\"timezone\":\"UTC\"},\"extra\":[]}\n",
+			"file": "/C/projects/on_vagrant/ubuntu/projects/yottly-api/Log/yottly_api.log",
+			"file_size": 8505,
+			"file_write_time": 131218651366771859,
+			"settings":
+			{
+				"buffer_size": 8505,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "{\"message\":\"Server internal error\",\"context\":{\"status\":{\"code\":\"ERROR\",\"message\":\"Server internal error\"},\"errorMsg\":\"message APP error\",\"errorTrace\":\"#0 {main}\"},\"level\":400,\"level_name\":\"ERROR\",\"channel\":\"yottly-api\",\"datetime\":{\"date\":\"2016-10-25 10:42:39.431931\",\"timezone_type\":3,\"timezone\":\"UTC\"},\"extra\":[]}\n{\"message\":\"Server internal error\",\"context\":{\"status\":{\"code\":\"ERROR\",\"message\":\"Server internal error\"},\"errorMsg\":\"message APP error\",\"errorTrace\":\"#0 {main}\"},\"level\":400,\"level_name\":\"ERROR\",\"channel\":\"yottly-api\",\"datetime\":{\"date\":\"2016-10-25 10:42:55.709708\",\"timezone_type\":3,\"timezone\":\"UTC\"},\"extra\":[]}\n{\"message\":\"Server internal error\",\"context\":{\"status\":{\"code\":\"ERROR\",\"message\":\"Server internal error\"},\"errorMsg\":\"message APP error\",\"errorTrace\":\"#0 {main}\"},\"level\":200,\"level_name\":\"INFO\",\"channel\":\"yottly-api\",\"datetime\":{\"date\":\"2016-10-25 10:44:07.114211\",\"timezone_type\":3,\"timezone\":\"UTC\"},\"extra\":[]}\n{\"message\":\"Server internal error\",\"context\":{\"status\":{\"code\":\"ERROR\",\"message\":\"Server internal error\"},\"errorMsg\":\"message APP error\",\"errorTrace\":\"#0 {main}\"},\"level\":200,\"level_name\":\"INFO\",\"channel\":\"yottly-api\",\"datetime\":{\"date\":\"2016-10-25 10:44:21.999384\",\"timezone_type\":3,\"timezone\":\"UTC\"},\"extra\":[]}\n{\"message\":\"Server internal error\",\"context\":{\"status\":{\"code\":\"ERROR\",\"message\":\"Server internal error\"},\"errorMsg\":\"message APP error\",\"errorTrace\":\"#0 {main}\"},\"level\":200,\"level_name\":\"INFO\",\"channel\":\"yottly-api\",\"datetime\":{\"date\":\"2016-10-25 10:44:23.185931\",\"timezone_type\":3,\"timezone\":\"UTC\"},\"extra\":[]}\n{\"message\":\"Server internal error\",\"context\":{\"status\":{\"code\":\"ERROR\",\"message\":\"Server internal error\"},\"errorMsg\":\"message APP error\",\"errorTrace\":\"#0 {main}\"},\"level\":200,\"level_name\":\"INFO\",\"channel\":\"yottly-api\",\"datetime\":{\"date\":\"2016-10-25 10:44:24.218882\",\"timezone_type\":3,\"timezone\":\"UTC\"},\"extra\":[]}\n{\"message\":\"Server internal error\",\"context\":{\"status\":{\"code\":\"ERROR\",\"message\":\"Server internal error\"},\"errorMsg\":\"message APP error\",\"errorTrace\":\"#0 {main}\"},\"level\":200,\"level_name\":\"INFO\",\"channel\":\"yottly-api\",\"datetime\":{\"date\":\"2016-10-25 10:51:13.132642\",\"timezone_type\":3,\"timezone\":\"UTC\"},\"extra\":[]}\n{\"message\":\"Server internal error\",\"context\":{\"status\":{\"code\":\"ERROR\",\"message\":\"Server internal error\"},\"errorMsg\":\"message APP error\",\"errorTrace\":\"#0 {main}\"},\"level\":200,\"level_name\":\"INFO\",\"channel\":\"yottly-api\",\"datetime\":{\"date\":\"2016-10-25 10:51:24.080496\",\"timezone_type\":3,\"timezone\":\"UTC\"},\"extra\":[]}\n{\"message\":\"Server internal error\",\"context\":{\"status\":{\"code\":\"ERROR\",\"message\":\"Server internal error\"},\"errorMsg\":\"message APP error\",\"errorTrace\":\"#0 {main}\"},\"level\":200,\"level_name\":\"INFO\",\"channel\":\"yottly-api\",\"datetime\":{\"date\":\"2016-10-25 10:52:03.239183\",\"timezone_type\":3,\"timezone\":\"UTC\"},\"extra\":[]}\n{\"message\":\"Server internal error\",\"context\":{\"status\":{\"code\":\"ERROR\",\"message\":\"Server internal error\"},\"errorMsg\":\"message APP error\",\"errorTrace\":\"#0 {main}\"},\"level\":200,\"level_name\":\"INFO\",\"channel\":\"yottly-api\",\"datetime\":{\"date\":\"2016-10-25 10:52:03.928802\",\"timezone_type\":3,\"timezone\":\"UTC\"},\"extra\":[]}\n{\"message\":\"Server internal error\",\"context\":{\"status\":{\"code\":\"ERROR\",\"message\":\"Server internal error\"},\"errorMsg\":\"message APP error\",\"errorTrace\":\"#0 {main}\"},\"level\":200,\"level_name\":\"INFO\",\"channel\":\"yottly-api\",\"datetime\":{\"date\":\"2016-10-25 10:52:04.686525\",\"timezone_type\":3,\"timezone\":\"UTC\"},\"extra\":[]}\n{\"message\":\"Server internal error\",\"context\":{\"status\":{\"code\":\"ERROR\",\"message\":\"Server internal error\"},\"errorMsg\":\"message APP error\",\"errorTrace\":\"#0 {main}\"},\"level\":200,\"level_name\":\"INFO\",\"channel\":\"yottly-api\",\"datetime\":{\"date\":\"2016-10-25 10:52:11.445864\",\"timezone_type\":3,\"timezone\":\"UTC\"},\"extra\":[]}\n{\"message\":\"Server internal error\",\"context\":{\"status\":{\"code\":\"ERROR\",\"message\":\"Server internal error\"},\"errorMsg\":\"message APP error\",\"errorTrace\":\"#0 {main}\"},\"level\":200,\"level_name\":\"INFO\",\"channel\":\"yottly-api\",\"datetime\":{\"date\":\"2016-10-25 10:52:12.136672\",\"timezone_type\":3,\"timezone\":\"UTC\"},\"extra\":[]}\n{\"message\":\"Server internal error\",\"context\":{\"status\":{\"code\":\"ERROR\",\"message\":\"Server internal error\"},\"errorMsg\":\"message APP error\",\"errorTrace\":\"#0 {main}\"},\"level\":200,\"level_name\":\"INFO\",\"channel\":\"yottly-api\",\"datetime\":{\"date\":\"2016-10-25 10:52:12.921902\",\"timezone_type\":3,\"timezone\":\"UTC\"},\"extra\":[]}\n{\"message\":\"Server internal error\",\"context\":{\"status\":{\"code\":\"ERROR\",\"message\":\"Server internal error\"},\"errorMsg\":\"message APP error\",\"errorTrace\":\"#0 {main}\"},\"level\":200,\"level_name\":\"INFO\",\"channel\":\"yottly-api\",\"datetime\":{\"date\":\"2016-10-25 10:55:39.381927\",\"timezone_type\":3,\"timezone\":\"UTC\"},\"extra\":[]}\n{\"message\":\"Server internal error\",\"context\":{\"status\":{\"code\":\"ERROR\",\"message\":\"Server internal error\"},\"errorMsg\":\"message APP error\",\"errorTrace\":\"#0 {main}\"},\"level\":200,\"level_name\":\"INFO\",\"channel\":\"yottly-api\",\"datetime\":{\"date\":\"2016-10-25 10:55:40.076626\",\"timezone_type\":3,\"timezone\":\"UTC\"},\"extra\":[]}\n{\"message\":\"Server internal error\",\"context\":{\"status\":{\"code\":\"ERROR\",\"message\":\"Server internal error\"},\"errorMsg\":\"message APP error\",\"errorTrace\":\"#0 {main}\"},\"level\":200,\"level_name\":\"INFO\",\"channel\":\"yottly-api\",\"datetime\":{\"date\":\"2016-10-25 10:55:40.792488\",\"timezone_type\":3,\"timezone\":\"UTC\"},\"extra\":[]}\n{\"message\":\"Server internal error\",\"context\":{\"status\":{\"code\":\"ERROR\",\"message\":\"Server internal error\"},\"errorMsg\":\"message APP error\",\"errorTrace\":\"#0 {main}\"},\"level\":200,\"level_name\":\"INFO\",\"channel\":\"yottly-api\",\"datetime\":{\"date\":\"2016-10-25 10:55:41.464503\",\"timezone_type\":3,\"timezone\":\"UTC\"},\"extra\":[]}\n{\"message\":\"Server internal error\",\"context\":{\"status\":{\"code\":\"ERROR\",\"message\":\"Server internal error\"},\"errorMsg\":\"message APP error\",\"errorTrace\":\"#0 {main}\"},\"level\":200,\"level_name\":\"INFO\",\"channel\":\"yottly-api\",\"datetime\":{\"date\":\"2016-10-25 10:55:42.373827\",\"timezone_type\":3,\"timezone\":\"UTC\"},\"extra\":[]}\n{\"message\":\"Server internal error\",\"context\":{\"status\"\n\n:{\"code\":\"ERROR\",\"message\":\"Server internal error\"},\"errorMsg\":\"message APP error\",\"errorTrace\":\"#0 {main}\"},\"level\":200,\"level_name\":\"INFO\",\"channel\":\"yottly-api\",\"datetime\":{\"date\":\"2016-10-25 10:55:43.093246\",\"timezone_type\":3,\"timezone\":\"UTC\"},\"extra\":[]}\n{\"message\":\"Server internal error\",\"context\":{\"status\":{\"code\":\"ERROR\",\"message\":\"Server internal error\"},\"errorMsg\":\"message APP error\",\"errorTrace\":\"#0 {main}\"},\"level\":200,\"level_name\":\"INFO\",\"channel\":\"yottly-api\",\"datetime\":{\"date\":\"2016-10-25 10:55:43.762757\",\"timezone_type\":3,\"timezone\":\"UTC\"},\"extra\":[]}\n{\"message\":\"Server internal error\",\"context\":{\"status\":{\"code\":\"ERROR\",\"message\":\"Server internal error\"},\"errorMsg\":\"message APP error\",\"errorTrace\":\"#0 {main}\"},\"level\":200,\"level_name\":\"INFO\",\"channel\":\"yottly-api\",\"datetime\":{\"date\":\"2016-10-25 11:31:43.564518\",\"timezone_type\":3,\"timezone\":\"UTC\"},\"extra\":[]}\n{\"message\":\"Server internal error\",\"context\":{\"status\":{\"code\":\"ERROR\",\"message\":\"Server internal error\"},\"errorMsg\":\"message APP error\",\"errorTrace\":\"#0 {main}\"},\"level\":200,\"level_name\":\"INFO\",\"channel\":\"yottly-api\",\"datetime\":{\"date\":\"2016-10-25 11:31:44.911437\",\"timezone_type\":3,\"timezone\":\"UTC\"},\"extra\":[]}\n{\"message\":\"Server internal error\",\"context\":{\"status\":{\"code\":\"ERROR\",\"message\":\"Server internal error\"},\"errorMsg\":\"message APP error\",\"errorTrace\":\"#0 {main}\"},\"level\":200,\"level_name\":\"INFO\",\"channel\":\"yottly-api\",\"datetime\":{\"date\":\"2016-10-25 11:31:46.206433\",\"timezone_type\":3,\"timezone\":\"UTC\"},\"extra\":[]}\n{\"message\":\"Server internal error\",\"context\":{\"status\":{\"code\":\"ERROR\",\"message\":\"Server internal error\"},\"errorMsg\":\"message APP error\",\"errorTrace\":\"#0 {main}\"},\"level\":200,\"level_name\":\"INFO\",\"channel\":\"yottly-api\",\"datetime\":{\"date\":\"2016-10-25 11:34:40.933873\",\"timezone_type\":3,\"timezone\":\"UTC\"},\"extra\":[]}\n{\"message\":\"Server internal error\",\"context\":{\"status\":{\"code\":\"ERROR\",\"message\":\"Server internal error\"},\"errorMsg\":\"message APP error\",\"errorTrace\":\"#0 {main}\"},\"level\":200,\"level_name\":\"INFO\",\"channel\":\"yottly-api\",\"datetime\":{\"date\":\"2016-10-25 11:35:19.454676\",\"timezone_type\":3,\"timezone\":\"UTC\"},\"extra\":[]}\n{\"message\":\"Server internal error\",\"context\":{\"status\":{\"code\":\"ERROR\",\"message\":\"Server internal error\"},\"errorMsg\":\"message APP error\",\"errorTrace\":\"#0 {main}\"},\"level\":200,\"level_name\":\"INFO\",\"channel\":\"yottly-api\",\"datetime\":{\"date\":\"2016-10-25 11:35:20.196752\",\"timezone_type\":3,\"timezone\":\"UTC\"},\"extra\":[]}\n{\"message\":\"Server internal error\",\"context\":{\"status\":{\"code\":\"ERROR\",\"message\":\"Server internal error\"},\"errorMsg\":\"message APP error\",\"errorTrace\":\"#0 {main}\"},\"level\":200,\"level_name\":\"INFO\",\"channel\":\"yottly-api\",\"datetime\":{\"date\":\"2016-10-25 11:53:59.119941\",\"timezone_type\":3,\"timezone\":\"UTC\"},\"extra\":[]}\n{\"message\":\"Server internal error\",\"context\":{\"status\":{\"code\":\"ERROR\",\"message\":\"Server internal error\"},\"errorMsg\":\"message APP error\",\"errorTrace\":\"#0 {main}\"},\"level\":200,\"level_name\":\"INFO\",\"channel\":\"yottly-api\",\"datetime\":{\"date\":\"2016-10-25 11:53:59.854052\",\"timezone_type\":3,\"timezone\":\"UTC\"},\"extra\":[]}\n",
+			"file": "/C/projects/on_vagrant/ubuntu/projects/yottly-api/Log/logstash-yottly_api.log",
+			"file_size": 9108,
+			"file_write_time": 131218700398399149,
+			"settings":
+			{
+				"buffer_size": 9110,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/C/projects/on_vagrant/ubuntu/projects/python_projects/python_hello.py",
+			"settings":
+			{
+				"buffer_size": 261,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/projects/on_vagrant/ubuntu/projects/python_projects/generateQuestions/generate_questions.py",
+			"settings":
+			{
+				"buffer_size": 2588,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/projects/on_vagrant/ubuntu/projects/python_projects/reference.py",
+			"settings":
+			{
+				"buffer_size": 138,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/projects/on_vagrant/ubuntu/projects/yottly-api/app/Config/config.ini",
+			"settings":
+			{
+				"buffer_size": 235,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/C/projects/on_vagrant/ubuntu/projects/yottly-api/app/bootstrap.php",
+			"settings":
+			{
+				"buffer_size": 2360,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/C/projects/on_vagrant/ubuntu/projects/yottly-api/yottly.conf",
+			"settings":
+			{
+				"buffer_size": 204,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/C/projects/on_vagrant/ubuntu/projects/yottly-api/app/Controller/Status.php",
+			"settings":
+			{
+				"buffer_size": 355,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/C/projects/on_vagrant/ubuntu/projects/yottly-api/public/index.php",
+			"settings":
+			{
+				"buffer_size": 631,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"last_filter": "ins",
+		"selected_items":
+		[
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"format",
+				"CodeFormatter: Show PHP Transformations"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"install P",
+				"Package Control: Install Package"
+			],
+			[
+				"remo",
+				"Package Control: Remove Package"
+			],
+			[
+				"",
+				"ANF: Copy Current File"
+			]
+		],
+		"width": 416.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/projects/on_vagrant/ubuntu",
+		"/C/projects/on_vagrant/ubuntu/logstash-2",
+		"/C/projects/on_vagrant/ubuntu/projects",
+		"/C/projects/on_vagrant/ubuntu/projects/python_projects"
+	],
+	"file_history":
+	[
+		"/C/Users/skulikowski/AppData/Roaming/Sublime Text 3/Packages/Anaconda/Default (Windows).sublime-keymap",
+		"/C/projects/on_vagrant/ubuntu/projects/rabbit_test/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Channel/AbstractChannel.php",
+		"/C/projects/on_vagrant/ubuntu/projects/rabbit_test/recive.php",
+		"/C/opscode/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.10.0/lib/kitchen/instance.rb",
+		"/C/Users/skulikowski/.chef/validation.pem",
+		"/C/Users/skulikowski/.chef/skulikowski.pem",
+		"/C/Users/skulikowski/.chef/knife.rb",
+		"/C/projects/Homestead/Code/products-analizer/app/Http/routes.php",
+		"/C/projects/Homestead/Code/products-analizer/.env",
+		"/C/projects/Homestead/Code/products-analizer/composer.json",
+		"/C/projects/Homestead/Code/products-analizer/app/Providers/AppServiceProvider.php",
+		"/C/projects/Homestead/Code/products-analizer/bootstrap/app.php",
+		"/C/projects/Homestead/Code/products-analizer/.env.example",
+		"/C/projects/Homestead/Code/products-analizer/composer.lock",
+		"/C/projects/Homestead/Code/products-analizer/app/User.php",
+		"/C/Users/skulikowski/AppData/Roaming/Sublime Text 3/Packages/AdvancedNewFile/README.md",
+		"/C/projects/on_vagrant/scotchbox/Vagrantfile",
+		"/C/Users/skulikowski/.ssh/id_rsa",
+		"/C/Users/skulikowski/Documents/Projects/Patterns/Delegate",
+		"/C/Users/skulikowski/Documents/info_start-04.04.2016.docx",
+		"/C/Users/skulikowski/AppData/Roaming/Sublime Text 3/Packages/CodeFormatter/CodeFormatter.sublime-settings",
+		"/C/Users/skulikowski/AppData/Roaming/Sublime Text 3/Packages/CodeFormatter/README.md",
+		"/C/Users/skulikowski/AppData/Roaming/Sublime Text 3/Packages/phpfmt/Default.sublime-keymap",
+		"/C/Users/skulikowski/AppData/Roaming/Sublime Text 3/Packages/php-grammar/README.md",
+		"/C/Users/skulikowski/AppData/Roaming/Sublime Text 3/Packages/PHP Completions Kit/README.md",
+		"/C/Users/skulikowski/AppData/Roaming/Sublime Text 3/Packages/Phpcs/Default (Windows).sublime-keymap",
+		"/C/xampp/apache/logs/ssl_request.log"
+	],
+	"find":
+	{
+		"height": 23.0
+	},
+	"find_in_files":
+	{
+		"height": 90.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"\n\t\t",
+			"websy",
+			",'12'",
+			"EXPORT_TABLE",
+			"Model",
+			"alternatives",
+			"dagre",
+			"\"\n",
+			"\";\n",
+			"app",
+			"CZ10XH",
+			"jklimek",
+			"=>",
+			" > MALL > ",
+			"> MALL > ",
+			"##",
+			"old",
+			"mkubacki",
+			"www/mkubacki",
+			"www",
+			"mkubacki",
+			"skulikowski",
+			"'source_id' => '4091',\n'supplier_id' => '57459',\n'purchase_organization' => 'PLA0',\n'currency' => 'PLN ',\n'protocol' => 'ftp',\n'url' => 'swedexml@swede.pl/swedeCeny.xml',\n'file_format' => 'xml',\n'auth_method' => 'basic',\n'username' => 'swedexml',\n'password' => '3sc3W97cbm',\n'save_price' => 'f',\n'save_stock' => 't',\n'active' => 't',\n'forcerun' => 'f',\n'running' => 'f',\n'xml_element' => '->PRODUCTS->PRODUCT',\n'source_id' => '4091',\n'supplier_id' => '57459',\n'purchase_organization' => 'PLA0',\n'currency' => 'PLN ',\n'protocol' => 'ftp',\n'url' => 'swedexml@swede.pl/swedeCeny.xml',\n'file_format' => 'xml',\n'auth_method' => 'basic',\n'username' => 'swedexml',\n'password' => '3sc3W97cbm',\n'save_price' => 'f',\n'save_stock' => 't',\n'active' => 't',\n'forcerun' => 'f',\n'running' => 'f',\n'xml_element' => '->PRODUCTS->PRODUCT'",
+			";",
+			"]",
+			"=",
+			"code",
+			"422",
+			"404",
+			"500",
+			"a unresolved",
+			"X-nrh-user",
+			"X-nrh-ShopId",
+			"session",
+			"php",
+			" ",
+			"1)",
+			"string",
+			"set",
+			"category",
+			"index.php",
+			"root",
+			"rootdirectory"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": true,
+		"replace_history":
+		[
+			",'13'",
+			":",
+			"",
+			" > ",
+			"current",
+			"skulikowski",
+			"www/projects/skulikowski",
+			"skulikowski",
+			",",
+			"",
+			"=>",
+			"an unresolved",
+			"X-Nrh-User",
+			"X-Nrh-Shopid",
+			",",
+			""
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 5,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "/C/projects/on_vagrant/ubuntu/logstash-2/logstash-apache.conf",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 439,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								439,
+								439
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/C/projects/on_vagrant/ubuntu/projects/yottly-api/Log/yottly_api.log",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 8505,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								8505,
+								8505
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 9,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "/C/projects/on_vagrant/ubuntu/projects/yottly-api/Log/logstash-yottly_api.log",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 9110,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								6024,
+								6024
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "/C/projects/on_vagrant/ubuntu/projects/python_projects/python_hello.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 261,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								197,
+								197
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 16.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "/C/projects/on_vagrant/ubuntu/projects/python_projects/generateQuestions/generate_questions.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2588,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								14,
+								14
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "/C/projects/on_vagrant/ubuntu/projects/python_projects/reference.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 138,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								138,
+								138
+							]
+						],
+						"settings":
+						{
+							"auto_name": "",
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "/C/projects/on_vagrant/ubuntu/projects/yottly-api/app/Config/config.ini",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 235,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								235,
+								235
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "/C/projects/on_vagrant/ubuntu/projects/yottly-api/app/bootstrap.php",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 2360,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								542,
+								542
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/php-grammar/PHP.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "/C/projects/on_vagrant/ubuntu/projects/yottly-api/yottly.conf",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 204,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								111,
+								111
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "/C/projects/on_vagrant/ubuntu/projects/yottly-api/app/Controller/Status.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 355,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/php-grammar/PHP.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 10,
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "/C/projects/on_vagrant/ubuntu/projects/yottly-api/public/index.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 631,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								631,
+								631
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/php-grammar/PHP.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.git":
+	{
+		"height": 100.0
+	},
+	"output.paneltranformations":
+	{
+		"height": 526.0
+	},
+	"pinned_build_system": "",
+	"project": "ubuntu_shared.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"pc",
+				"mall_tasks\\SF-25 cleanup dependencies"
+			],
+			[
+				"rou",
+				"app\\Http\\routes.php"
+			],
+			[
+				"env",
+				".env"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": false,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 305.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

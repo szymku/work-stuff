@@ -1,0 +1,10 @@
+Windows general
+
+autostart of programs
+
+
+
+there is something like run dialog in Windows:) 
+window + R
+    -> shell:startup
+    -> msconfig 

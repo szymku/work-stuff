@@ -1,0 +1,68 @@
+PC-667 add dredd and functional test into bamboo procces
+
+bamboo server -> add dredd there?
+1. install npm 
+2. install dredd
+
+unit tests before deployment 
+functional tests and dredd tests after deployment procces 
+
+bamboo create artifact -> file created by build
+
+
+run build -> artifact -> run deployment
+
+http://bamboo-archive.mall.local/warehouse-availability/
+
+
+===
+Plan: (do it with dkron jobs)
+
+1. Add dreddhooks and goodman to bin; dredd.yml to tests/dredd 
+2. Cookbook for npm and dredd
+3. Create dkron job (run every 15 min)
+4. Do something with output
+
+
+databag - a global variable
+
+
+node.default['dkron']['config']['tags']['role'] = "warehouse-availability"
+include_recipe 'nrh-dkron::agent'
+
+
+GROOMing
+PC-690
+- create table in monolith
+- create sql to our template in websync, extend synchronizing products
+- testing 
+
+PC-711
+- add values to ES
+- change template in webadmin
+- use data as ceneo needed
+
+a lot of ceneo templates webadmin.mall/articles-export/template
+connect with someone who knows
+
+pl-ceneo template
+
+for testing good to create own template productTeam-ceneo
+
+poland have a lot of things from czech (add only products in PLN)
+
+
+PC-668
+export feeds
+errors to off, suppress errors
+
+PC-576
+only web
+change connection string to (not open new connection, reuse old)
+maybe in chef -> change there 
+
+in indexer with another credential
+1. web
+2. beckand
+
+

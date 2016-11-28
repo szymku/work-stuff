@@ -1,0 +1,20 @@
+PC-638 add logger to lib-slimer
+
+
+pimpler 
+
+in construct are defined 
+SplObjectStorage
+
+interface /ArrayAccess
+
+
+steps:
+1. when start Slimer we load customer config to it
+2. merge configuration  
+3. 
+
+
+static-code-analizer 
+The script has to be run from vendor/bin directory!
+let's try on vagrant 
