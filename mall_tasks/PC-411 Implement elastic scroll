@@ -1,0 +1,115 @@
+PC-411 Implement elastic scroll for reindex archive
+
+msg of error: 
+ Result window is too large, from + size must be less than or equal to: [10000] but was [10059]. See the scroll api for a more efficient way to request large data sets. This limit can be set by changing the [index.max_result_window] index level parameter. in /var/www/html/product-indexer/productindexer-203/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php:657 caused by Elasticsearch\Common\Exceptions\ServerErrorResponseException: {"error":{"root_cause":[{"type":"query_phase_execution_exception","reason":"Result window is too large, from + size must be less than or equal to: [10000] but was [10059]. See the scroll api for a more efficient way to request large data sets. This limit can be set by changing the [index.max_result_window] index level parameter."}],"type":"search_phase_execution_exception","reason":"all shards failed","phase":"query","grouped":true,"failed_shards":[{"shard":0,"index":"products_archive_2016_08_04_08_57_30","node":"jYZEYAO2QkSCF586RWDdsQ","reason":{"type":"query_phase_execution_exception","reason":"Result window is too large, from + size must be less than or equal to: [10000] but was [10059]. See the scroll api for a more efficient way to request large data sets. This limit can be set by changing the [index.max_result_window] index level parameter."}}]},"status":500} in /var/www/html/product-indexer/productindexer-203/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Connections/Connection.php:655
+
+ 
+when reindex-archive is fired
+is fired in dkron
+http://dkron-server.cs.mall.test/dashboard/jobs
+
+
+Some statistics
+
+Number of products in archive: 341597
+
+How memory usage and time differs when set various window sizes for ES:
+
+size set to 1 mln (no size)
+memory_peak: ~681 MB
+memory: ~618 MB
+search time: ~9 s
+
+size set to 100 thousands
+memory_peak: ~397 MB
+memory: ~371 MB
+search time: ~11 s
+
+size set to 10 thousands
+memory_peak: ~117 MB
+memory: ~114 MB
+search time: ~14 s
+
+size set to 1 thousand
+memory_peak: ~103 MB
+memory: ~102 MB
+search time: ~16 s
+
+*memory - memory usage after getting all ids
+*memory_peak - peak_memory usage after getting all ids
+*search time - time needed to getting all ids using scroll api
+
+
+Window size chosen to 10 000 as the most optimal.
+
+Time needed to push all products to redis queue around 10 min.
+
+
+dkron before 
+echo "Setting DKRON job reindex_archive"
+curl -n -X POST http://dkron-server.cs.mall.test/v1/jobs -H "Content-Type: application/json" -d '
+{
+	"name": "reindex_archive",
+	"schedule": "0 0,30 * * * *",
+	"command": "php /www/product-indexer/current/www/index.php indexer:reindex-archive -s 37 1",
+	"owner": "",
+	"owner_email": "",
+	"run_as_user": "",
+	"disabled": false,
+	"tags": {
+		"role": "nrh_productindexer:1"
+	}
+}'
+
+
+
+dkron after
+
+{
+	"name": "reindex_archive",
+	"schedule": "0 15 0 * * *",
+	"command": "php /www/product-indexer/current/www/index.php indexer:reindex-archive",
+	"owner": "",
+	"owner_email": "",
+	"run_as_user": "",
+	"disabled": false,
+	"tags": {
+		"role": "nrh_productindexer:1"
+	},
+	"shell": true
+}
+
+
+start around 14.00
+"p1": 308775,
+"p2": 191886
+
+"p1": 305925,
+"p2": 185886
+
+"p1": 302125,
+"p2": 178591
+
+15:52
+"p1": 287425,
+"p2": 170199
+
+
+The idea is to run reindex_archive in time of the lowest load.
+
+the most load around: 19-23
+the lowest load around: 00-07
+
+last product id reindexed
+Fri, 16 Dec 2016 04:30:18.404 GMT
+
+efc7d82bfdb50a68ac967e13bfeecf8f683fd33d
+bda746baa495fb42d8518750f82ca1c5c55bc5e3
+
+
+Disappearing of index was caused by step "Synchronize cluster" in websync
+We have this logs in kibana
+
+
+17-12-2016 reindex_archive finished with success at 06:28 on test (341 000 ids)
+20-12-2015 reindex_archive finished with success at around 03:00 on prod (411 000 ids)

@@ -1,0 +1,22 @@
+variables
+
+var (
+  a = 5
+  b string
+)
+
+
+make 
+
+
+map is unordered group of elements of one type
+
+map[string]int
+map[int]interface{}
+
+we can create an empty map with make built-in function
+make(map[*T]struct{x, y float64})
+
+third parameter in struct: (named tag)
+https://golang.org/ref/spec#Struct_types
+

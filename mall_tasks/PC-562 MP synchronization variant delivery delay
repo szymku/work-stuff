@@ -1,0 +1,251 @@
+PC-562 MP synchronization variant delivery delay
+
+MARKETPLACE -> 
+  prod: MARKETPLACE 
+  test: MARKETPLACET_1 
+    - table: variant
+      - column: delivery_delay
+
+
+I have a question about PC-562
+
+namespace App\Model\Product;
+ProductsDbMapper.php
+VarinatDbMapper.php
+
+I have some concerns:
+ - we have now delivery deley only for product
+ - we want to have also by variant
+ - we need to do it only in websync
+
+ if variant.delivery_delay is null we do nothing
+
+ Am I right?
+
+
+
+product: 
+     100000123884
+variants:
+  - "100000140110"
+  - "100000123887"
+  - "100000123886"
+  - "100000123885"
+
+registered queries (percolators) search-in-reverse,
+
+ES mappings
+
+team-it-product@mall.cz -> apiary mail
+
+
+steps:
+
+go to variant endpoint  Product->getByVariantId($varinatId)
+
+
+
+where is qb (queryBuilder)?
+QueryBuilder extends QueryBuilderAbstract
+
+where is showQuery?
+model/Query/ShowQuery
+
+{
+  "query": {
+    "bool": {
+      "filter": {
+        "and": [
+          {
+            "exists": {
+              "field": "menu.CZ10MA.menu_item_id"
+            }
+          },
+          {
+            "nested": {
+              "path": "variant_data",
+              "filter": {
+                "and": [
+                  {
+                    "terms": {
+                      "variant_data.shops": [
+                        "CZ10MA"
+                      ]
+                    }
+                  },
+                  {
+                    "terms": {
+                      "variant_data.variant_id": [
+                        "100000123886"
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "sort": {
+    "main_variant_availability.CZ": "desc",
+    "priority": "desc",
+    "url_key.C": "asc",
+    "title_full.C": "asc"
+  }
+}
+
+
+
+
+Query/SearchQuery
+
+array_keys($result['hits']['hits'][0]['_source'])
+
+string(6) "RESULT"
+array(41) {
+  
+  string(9) "successor"
+  
+  string(32) "marketplace_delivery_setup_ex_id"
+  
+  string(22) "marketplace_partner_id"
+  
+  string(11) "description"
+  
+  string(8) "variants"
+  
+  string(5) "title"
+  
+  string(12) "variant_data"
+  
+  string(8) "division"
+  
+  string(10) "title_full"
+  
+  string(13) "ranking_count"
+  
+  string(10) "product_id"
+  
+  string(15) "variant_param_2"
+  
+  string(11) "brief_plain"
+  
+  string(14) "is_marketplace"
+  
+  string(15) "variant_param_1"
+  
+  string(5) "brand"
+  
+  string(5) "brief"
+  
+  string(13) "ranking_stars"
+  
+  string(9) "main_menu"
+  
+  string(25) "main_variant_availability"
+  
+  string(18) "text_ranking_count"
+  
+  string(11) "alternative"
+  
+  string(26) "marketplace_delivery_delay"
+  
+  string(10) "adult_only"
+  
+  string(8) "priority"
+  
+  string(4) "menu"
+  
+  string(9) "object_id"
+  
+  string(22) "marketplace_commission"
+  
+  string(7) "url_key"
+  
+  string(15) "average_ranking"
+  
+  string(25) "marketplace_partner_title"
+  
+  string(6) "pviews"
+  
+  string(14) "main_menu_text"
+  
+  string(14) "brief_checksum"
+  
+  string(12) "product_type"
+  
+  string(7) "measure"
+  
+  string(15) "main_variant_id"
+  
+  string(18) "accessory_variants"
+  
+  string(22) "marketplace_close_time"
+  
+  string(9) "accessory"
+  
+  string(20) "description_checksum"
+}
+
+
+
+
+
+where variants are build 
+#0  App\Model\Product\Product->buildVariants() called at [/var/www/html/skulikowski/projects/papi/app/model/Product/Product.php:96]
+#1  App\Model\Product\Product->__construct() called at [/var/www/html/skulikowski/projects/papi/app/model/Product/ProductIterator.php:205]
+#2  App\Model\Product\ProductIterator->current() called at [/var/www/html/skulikowski/projects/papi/app/model/OutputFilter/ListFilter.php:60]
+#3  App\Model\OutputFilter\ListFilter->processProducts() called at [/var/www/html/skulikowski/projects/papi/app/model/ProductSearch.php:778]
+#4  App\Model\ProductSearch->query() called at [/var/www/html/skulikowski/projects/papi/app/module/v1/Search.php:411]
+#5  Product\App\Module\v1\Search->processQuery() called at [/var/www/html/skulikowski/projects/papi/app/module/v1/Product.php:64]
+#6  Product\App\Module\v1\Product->getByVariantId()
+#7  call_user_func_array() called at [/var/www/html/skulikowski/projects/papi/vendor/api/Manager.php:140]
+#8  NRHolding\SimpleApi\Manager->run() called at [/var/www/html/skulikowski/projects/papi/public/index.php:49]
+
+variant data on build
+43 attributes
+"gift"
+"insurance"
+ "bonus_sets"
+ "warehouse_type"
+"on_stock"
+"pv_lang"
+ "pv_special"
+ "general_media"
+ "description"
+ "transport_unit_type"
+ "free_delivery_method_ids"
+ "bonus_sets_data"
+"main"
+"media"
+ "availability"
+"title"
+ "media_priority"
+ "variant_id"
+"price"
+ "product_id"
+ "main_score"
+ "gift_variants"
+ "brief_plain"
+"barcode"
+"partno"
+ "media_title"
+"brief"
+ "group_attributes"
+ "preferred_main_variant"
+ "package_group_id"
+"weight"
+ "warehouse_number"
+"params"
+ "available_from"
+"labels"
+"url_key"
+ "discount_action"
+ "brief_checksum"
+"size"
+ "main_media_id"
+ "extended_warranty"
+"shops"
+ "description_checksum"

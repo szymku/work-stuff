@@ -751,3 +751,148 @@ _mapping?pretty=true
 api_total_time
 
 -- 28-11-2016 --
+
+backend/data/web_synchronizer/*  -> templates for websynchronizer
+
+-- 30-11-2016 --
+
+shop-availability-pretest.product.osdc1.mall.local
+
+MARKETPLACE -> 
+prod: MARKETPLACE 
+test: MARKETPLACET_1 
+  - table: variant
+    - column: delivery_delay
+
+_percoator hold the registered queries
+
+urldecode
+
+products_url -> index; we probably index all variants there 2,2MLN
+
+sudo apt-get install snmp
+
+
+-- 04-12-2016 --
+
+$_SERVER - php variable somethimes worth to see
+
+debug_backtrace(DEBUG_BACKTRACE_IGNORE_ARGS);
+
+    foreach( debug_backtrace() as $call){
+      printf("%s %s %s %s %s %s" . PHP_EOL, $call['class'], $call{'function'}, $call['file'], $call['line'],  $call['type']);
+    }
+
+
+-- 08-12-2016 --
+
+START :)
+
+08:27 mail
+08:28 zmiany w bamboo (WAS)
+    08:48 .gitlab-ci.yml check how it works
+08:53 back 
+09:09 get major bug PC-784 
+    09:15  PC-792: Declaration of Product\\App\\Module\\v1\\UrlArchive::startup() should be compatible with Product\\App\\Module\\v1\\Search::startup($setupSearch = true) - check
+  09:33 back
+    09:45 planning
+  11:23 back
+    11:50 youtube, koffee
+  12:09 back
+    12:10 telephone
+  12:20 back
+      
+
+
+
+PC-711 
+from ES to 
+
+allegro check errors in webadmin
+
+
+Hi Martin
+
+We have problems with "memory size of 1073741824 bytes exhausted .." on PAPI machines because of large data in some export feeds
+We would like to increase php memory limit to 2GB
+Can you see any problems about that?
+
+
+cd /opt/warehouse-availability-service/current && dredd docs/blueprint.apib http://warehouse-availability-pretest.product.osdc1.mall.local:8138 --language go --hookfiles bin/dreddhooks
+
+
+-- 09-12--2016 --
+
+concurrency chef - additional parameter for deploying on chef
+
+Jak możesz:
+  - odpal chef clienta na pretescie (v0.1.39)
+  - wtedy odpalę deploya na pretest
+
+Jeżli wszystko pójdzie ok, będziemy mogli to powtórzyć na test i w koncu na prod.
+Brzmi ok?
+
+
+-- 12-12-2016 -- 
+
+reindex_archive is running by dkron
+
+is also monitoring by reindex_archive in pix (Mateusz and Iurii was working on that)
+dkron:job-monitor
+
+dkron 
+
+increase -s parameter in reindex_archive
+curl -n -X POST http://dkron-server.cs.mall.test/v1/jobs -H "Content-Type: application/json" -d '
+{
+  "name": "reindex_archive",
+  "schedule": "0 0,30 * * * *",
+  "command": "php /www/product-indexer/current/www/index.php indexer:reindex-archive -s 37 1",
+  "owner": "",
+  "owner_email": "",
+  "run_as_user": "",
+  "disabled": false,
+  "tags": {
+    "role": "nrh_productindexer:1"
+  }
+}'
+
+-s parameter that is changing to work with "to large window" error from ES
+
+communicate after success from dkron reindex_archive
+
+
+-- 13-12-2016 --
+
+web team use asynchronous loding of Google Tag Manager
+
+https://kb.mall.local/
+
+
+ID     PLN(netto) 
+681321 658,4     - https://www.mall.pl/wyciskarki-wolnoobrotowe/zelmer-wyciskarka-wolnoobrotowa-zjp1600b
+332200 284,8     - https://www.mall.pl/sokowirowki/zelmer-sokowirowka-476-zje1900x    
+
+
+-- 22-12-2016 --
+
+----
+ln -> creates connection between files (they are synchronized)
+  deleting one of them doesn't affect the other
+
+----
+ESIndexerRunner.php -> here the indexation takes place   
+
+
+----
+PC-839
+
+brit -> find in mall.pl 
+brit -> empty brand in mall.cz 
+
+
+-- 28-12-2016 --
+
+----
+PC-813
+

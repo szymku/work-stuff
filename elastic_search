@@ -1,5 +1,0 @@
-dump db
-http://gitlab.mall.local/product-team/product-indexer/blob/master/utils/elasticdump.sh
-
-
-_source 

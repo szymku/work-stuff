@@ -157,18 +157,7 @@ BEGIN
 END; 
 
 
-
-
-
-
-
-
-
-
-
 select * from IMWCL27.VARIANT_LABEL
-
-
 
 
 
@@ -292,9 +281,7 @@ BEGIN
 
   EXECUTE IMMEDIATE (table_definition);
 END;
-/
-      
-      
-      
-      
+/      
+
+backend/data/web_synchronizer -> tables.sql
       

@@ -13,37 +13,182 @@ discipline
 22-11-2016  -  -  -  -  -  -  -  -  -  -
 23-11-2016  x  x  x  -  -  -  -  -  -  -
 24-11-2016  X  -  -  -  -  
+----------------------------------------
+12-12-2016  X  -  x  -  x  -  -  -  -
+13-12-2016  x  -  -  x  x  -  -  -  - 
+14-12-2016  -  -  -  -  -  -  -  -  -  -
+15-12-2016  -  -  -  -  -  -  -  -  -  -
+16-12-2016  -  -  -  -  -  -  -  -  -  -
+--
+19-12-2016  -  x  -  x  x  -  -  -  -  -
+20-12-2016  -  -  -  x  -  -  -  -  -  -
+
+29-12-2016  -  -  -  -  x  
+
+I'm working on task https://jira.nrholding.com/browse/PC-813
+and I'm trying to use http://gitlab.mall.local/osd-web/sap-webservice-client
+
+$client = new WebServiceClient('ietmsg.mall.local', 8137, 'WEB', 'dgls44HX1', new Logger('supplier-feed'));
+
+$wsName = 'Z_CSSRC_GOVE_UPL';
+$wsParams = ['IV_NWAIT' => 60];
+$timeout = 60;
+
+$result = $client->call($wsName, $wsParams, $timeout);
+
+I looked also here
+http://ietmsg.mall.local:8137/sap/bc/soap/wsdl11?services=Z_CSSRC_GOVE_UPL
+
+Can you help me with this?
+
+Do you know how can I verify if $client->call(...) finished with success?
+
+
+In wsdl there are ET_BAPIRET2, IT_IDATS, IV_NWAIT.
+Do you know what those parameter do or how can I check it?
+
+
+SELECT vp.variant_id, vp.price 
+FROM ywg_var_price@IET.WORLD vp;
 
 
 
-### Clear expired reservations [DELETE /reservation/expired]
-
-This endpoint is responsible for cleaning outdated reservation and reservation confirmation tokens.
-
-+ Request (application/json)
-
-        {
-            "bug": "Normally this request should be empty ...but
-                    here is a bug in dredd test environment and the request can not be empty because tests hanging forever.
-                    here is a link to this bug: https://github.com/apiaryio/dredd/issues/556
-                    TODO remove this request after bug in dredd will be fixed"
-        }
+10403,3511,3651,311,182,10,2871,16,17,32,33,3311,2451,3671,3271,3592,3051,3811,1231,1411,1451,1491,1492,1531,1593,
 
 
-+ Response 200 (application/json; charset=UTF-8)
+Array
+(
+    [0] => stdClass Object
+        (
+            [ET_BAPIRET2] => stdClass Object
+                (
+                )
 
-        {
-            "deleted_reservations": 10,
-            "deleted_confirmed_reservations": 5
-        }
+            [EV_CNT] => 1
+            [EV_CNT_ERR] => 0
+            [IT_IDATS] => stdClass Object
+                (
+                    [item] => Array
+                        (
+                            [0] => stdClass Object
+                                (
+                                    [LIFNR] => 11030
+                                    [IDNLF] =>
+                                    [MATNR] =>
+                                    [EAN11] => 8594073070135
+                                    [LIFAB] =>
+                                    [MENGE_BI] => 66
+                                    [EKORG] => CZA0
+                                    [PRICE] => 1111.1
+                                    [WAERS] => CZK
+                                    [DATAB] =>
+                                    [DATBI] =>
+                                )
+                                ....
 
-+ Response 500 (application/json; charset=UTF-8)
+            [OV_NWAIT] => 60
+        )
+)        
 
-    + Attributes (Error)
+var_dump('-- --');
+		var_dump('-- NEW --');
+		var_dump('-- --');
 
-    + Body
 
-            {
-               "message": "Garbage collector failed",
-               "errorCode": "ERROR"
-            }
+//		var_dump($this->Aknown_ids);
+//		var_dump($this->Aunknown_ids);
+//		var_dump($this->Amatnr_eans);
+//		var_dump($this->Aean_matnr);
+//		var_dump($this->Aexternal_id_matnr);
+//
+//		var_dump($Amatnr_external_ids);
+//		var_dump($this->Acrosscheck_ids);
+//		var_dump($this->Acrosscheck_repeated_external_ids);
+//		var_dump($this->Acrosscheck_external_ids);
+//		var_dump($this->Acrosscheck_eans);
+
+
+		var_dump('-- --');
+		var_dump('-- OLD --');
+		var_dump('-- --');
+//		var_dump($id);
+//
+//		var_dump($this->known_ids);
+//		var_dump($this->unknown_ids);
+//		var_dump($this->matnr_eans);
+//		var_dump($this->ean_matnr);
+//		var_dump($this->external_id_matnr);
+//
+//		var_dump($matnr_external_ids);
+//		var_dump($this->crosscheck_ids);
+//		var_dump($this->crosscheck_repeated_external_ids);
+//		var_dump($this->crosscheck_external_ids);
+//		var_dump($this->crosscheck_eans);
+
+		var_dump('---------');
+		var_dump('---------');
+
+
+//		var_dump(array_diff($this->known_ids, $this->Aknown_ids));
+//		var_dump(array_diff_key($this->unknown_ids, $this->Aunknown_ids));
+//		var_dump(array_diff($this->matnr_eans, $this->Amatnr_eans));
+//		var_dump(array_diff($this->ean_matnr, $this->Aean_matnr));
+//		var_dump(array_diff($this->external_id_matnr, $this->Aexternal_id_matnr));
+
+		var_dump('diff from diff site');
+
+
+//		var_dump(array_diff($this->Aknown_ids, $this->known_ids));
+//		var_dump(array_diff_key($this->Aunknown_ids, $this->unknown_ids));
+//		var_dump(array_diff($this->Amatnr_eans, $this->matnr_eans));
+//		var_dump(array_diff($this->Aean_matnr, $this->ean_matnr));
+//		var_dump(array_diff($this->Aexternal_id_matnr, $this->external_id_matnr));
+
+		var_dump('check if the same');
+
+		var_dump($this->known_ids == $this->Aknown_ids);
+		var_dump($this->unknown_ids == $this->Aunknown_ids);
+		var_dump($this->matnr_eans == $this->Amatnr_eans);
+		var_dump($this->ean_matnr == $this->Aean_matnr);
+		var_dump($this->external_id_matnr == $this->Aexternal_id_matnr);
+
+		var_dump($matnr_external_ids == $Amatnr_external_ids);
+		var_dump($this->crosscheck_ids == $this->Acrosscheck_ids);
+		var_dump($this->crosscheck_repeated_external_ids == $this->Acrosscheck_repeated_external_ids);
+		var_dump($this->crosscheck_external_ids == $this->Acrosscheck_external_ids);
+		var_dump($this->crosscheck_eans == $this->Acrosscheck_eans);
+
+
+		var_dump('count of arrays');
+
+		var_dump('known', count($this->Aknown_ids), count($this->known_ids));
+		var_dump('unknown', count($this->Aunknown_ids), count($this->unknown_ids));
+
+
+
+
+
+
+		var_dump(count($this->known_ids));
+		var_dump(count($this->unknown_ids));
+		var_dump(count($this->matnr_eans));
+		var_dump(count($this->ean_matnr));
+		var_dump(count($this->external_id_matnr));
+
+		var_dump(count($matnr_external_ids));
+		var_dump(count($this->crosscheck_ids));
+		var_dump(count($this->crosscheck_repeated_external_ids));
+		var_dump(count($this->crosscheck_external_ids));
+		var_dump(count($this->crosscheck_eans));
+
+		int(92)
+int(92)
+int(78)
+int(92)
+
+
+3651,3611,3271,3593,1231,1891,1971,45,46,60,81,251,291,198,203,185,5,2871,2771,184,3633,971,1551,37,38,67,72,76,77,191,131,172,183,3592,2471,188,3851,2331,3491,3632,3211,3251,2491,1252,1534,1851,2971,2731,25,29,32,33,41,43,44,83,87,271,711,1192,2211,151,186,2552,4212,23,49,51,56,65,68,69,71,75,771,671,1771,17,1091,10303,19,10363,10403,3192,3511,3191,9363,9783,9865,10143,10263,311,182,10,10323,3871,2772,3371,3911,3311,2451,3671,3051,3811,932,1411,1451,1491,1492,1531,1593,1651,1691,1752,1793,1931,2611,3591,57,66,78,176,194,212,691,732,811,211,531,551,1571,181,180,173,178,16,2371,3111,2431,4193,2551,3451,14,1751,2011,2051,2052,2191,3452,2571,2291,2891,3531,3691,3791,1051,1194,1253,1271,1511,1731,3711,59,63,651,751,1631,2651,3771,171,2751,3091,991,1251,1292,1811,175,85,86,471,1391,1812,2071,2131,2171,2271,3373,3092,1011,451,3071,1333,3171,3431,2411,1792,2231,2812,1111,1191,2091,2811,2391,9,2572,2951,2671,2711,3032,3131,1052,1053,1151,891,1291,1532,1533,1671,1852,1911,3351,3372,3634,2511,3391,3411,24,177,192,431,591,611,197,571,1371,1871,1951,2251,187,189,2591,3831,48,50,73,53,54,58,52,3031,36,3231,1331,22,631,411,18,391,1131,1311,851,3751,1171,13,1193,1211,1213,1212,1471,1592
+
+string(13) "$e->faultcode"
+string(4) "HTTP"
+string(21) "Internal Server Error"

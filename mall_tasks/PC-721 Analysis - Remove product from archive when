@@ -1,0 +1,16 @@
+PC-721 Analysis - Remove product from archive when it is available again
+
+1. We don't need to create new command. We are checking availability during reindex_archive procces.
+
+2. The idea is to add deleting of available products in current procces 
+Current proccess
+  -  getting all ids from products_archive index
+  -  checking if they are available or not
+    -  if they are still unavailable we reindex them 
+    -  if they became available we do nothing (here is the place for adding our functionality )
+
+  What to do:
+  - create redis queue and push all ids (again available) to it 
+  - create consumer (new Class or use existing class with new method) for deleting products from index
+  - add consumer to config.neon
+  - run consumer

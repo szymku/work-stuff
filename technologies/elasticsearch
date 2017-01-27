@@ -1,0 +1,33 @@
+dump db
+http://gitlab.mall.local/product-team/product-indexer/blob/master/utils/elasticdump.sh
+
+
+_source 
+
+
+scroll:
+- Scrolling is not intended for real time user requests
+- "search context"
+
+---
+inverted index - structure that is design to very fast full-text search [https://www.elastic.co/guide/en/elasticsearch/guide/current/inverted-index.html]
+  - terms or tokens (single words) 
+  - root word (dog, dogs) root is dog
+  - Remember, a preceding + means that the word must be present. (+brown +dog)
+
+both the indexed text and the query string must be normalized into the same form
+---
+
+By default string fields are analyzed
+
+analyzed not_analyzed
+
+
+is on request or many?
+
+cursor in DB
+
+---
+delete API
+
+versioning
